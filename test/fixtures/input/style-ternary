@@ -1,0 +1,585 @@
+!rwsearch 1.0 sitewords
+!di 1
+!hp https://bluephrase.com/style/character/letter-spacing.blue
+!ti letter-spacing
+!de Fine tune the distance between the individual characters of words to create titling effects and to improve readability.
+!ky css, style, character, letter-spacing
+!di 2
+!hp https://bluephrase.com/style/character/overflow-wrap.blue
+!ti overflow-wrap
+!de Break a long string of characters without spaces so that it doesn't overflow the element's boundaries.
+!ky css, style, character, overflow-wrap
+!di 3
+!hp https://bluephrase.com/style/character/quotes.blue
+!ti quotes
+!de Set the glyphs used as quotation-mark enclosures with HTML's <q> tag.
+!ky css, style, character, quotes
+!di 4
+!hp https://bluephrase.com/style/character/tab-size.blue
+!ti tab-size
+!de Use this property to set the width of the whitespace created by a TAB keystroke.
+!ky css, style, character, tab-size
+!di 5
+!hp https://bluephrase.com/style/character/text-decoration-color.blue
+!ti text-decoration-color
+!de Set the color of underlines, overlines, strikethroughs, and wavy lines.
+!ky css, style, character, text-decoration-color
+!di 6
+!hp https://bluephrase.com/style/character/text-decoration-line.blue
+!ti text-decoration-line
+!de Choose which type of decorative line to apply to the element's text.
+!ky css, style, character, text-decoration-line
+!di 7
+!hp https://bluephrase.com/style/character/text-decoration-style.blue
+!ti text-decoration-style
+!de Set the style for decorative lines used with the element's text.
+!ky css, style, character, text-decoration-style
+!di 8
+!hp https://bluephrase.com/style/character/text-decoration-thickness.blue
+!ti text-decoration-thickness
+!de Set the thickness of underlines, overlines, strikethroughs, and wavy lines.
+!ky css, style, character, text-decoration-thickness
+!di 9
+!hp https://bluephrase.com/style/character/text-decoration.blue
+!ti text-decoration
+!de This property sets all of these properties in a single declaration: text-decoration-line, text-decoration-style and text-decoration-thickness.
+!ky css, style, character, text-decoration
+!di 10
+!hp https://bluephrase.com/style/character/text-emphasis-color.blue
+!ti text-emphasis-color
+!de This property sets the color used with East Asian text emphasis marks.
+!ky css, style, character, text-emphasis-color
+!di 11
+!hp https://bluephrase.com/style/character/text-emphasis-position.blue
+!ti text-emphasis-position
+!de This property sets the position of East Asian emphasis marks.
+!ky css, style, character, text-emphasis-position
+!di 12
+!hp https://bluephrase.com/style/character/text-emphasis-style.blue
+!ti text-emphasis-style
+!de This property specifies which symbol to use for East Asian text emphasis marks.
+!ky css, style, character, text-emphasis-style
+!di 13
+!hp https://bluephrase.com/style/character/text-emphasis.blue
+!ti text-emphasis
+!de This property sets both the text-emphasis-color and text-emphasis-style properties in a single declaration.
+!ky css, style, character, text-emphasis
+!di 14
+!hp https://bluephrase.com/style/character/text-shadow.blue
+!ti text-shadow
+!de This property casts a drop shadow across text using a light source from a specified direction and distance.
+!ky css, style, character, text-shadow
+!di 15
+!hp https://bluephrase.com/style/character/text-transform.blue
+!ti text-transform
+!de Force the letters of an element to be UPPERCASE or lowercase.
+!ky css, style, character, text-transform
+!di 16
+!hp https://bluephrase.com/style/character/text-underline-position.blue
+!ti text-underline-position
+!de Use this property to force text-decoration underlines to be below the baseline of characters, so that the underline does not cross over letter descenders.
+!ky css, style, character, text-underline-position
+!di 17
+!hp https://bluephrase.com/style/character/white-space.blue
+!ti white-space
+!de Determine how spaces, tabs and newlines are handled within an element.
+!ky css, style, character, white-space
+!di 18
+!hp https://bluephrase.com/style/character/word-break.blue
+!ti word-break
+!de Prevent text that has no spaces from overflowing the element's boundaries.
+!ky css, style, character, word-break
+!di 19
+!hp https://bluephrase.com/style/character/word-spacing.blue
+!ti word-spacing
+!de Add additional spacing between words.
+!ky css, style, character, word-spacing
+!di 20
+!hp https://bluephrase.com/style/character.blue
+!ti character
+!de These properties set the typographic treatment used with individual characters.
+!ky letter-spacing, quotes, tab-size, text-decoration, text-decoration-line, text-decoration-color, text-decoration-style, text-decoration-thickness, text-emphasis, text-emphasis-style, text-emphasis-color, text-emphasis-position, text-shadow, text-transform, text-underline-position, white-space, word-break, word-spacing, word-wrap, css, style, character, character
+!di 21
+!hp https://bluephrase.com/style/sizing/height.blue
+!ti height
+!de Specify the element's initial height.
+!ky css, style, sizing, height
+!di 22
+!hp https://bluephrase.com/style/sizing/max-height.blue
+!ti max-height
+!de Specify the maximum height for elements that automatically change their size.
+!ky css, style, sizing, max-height
+!di 23
+!hp https://bluephrase.com/style/sizing/max-width.blue
+!ti max-width
+!de Specify the maximum width for elements that automatically change their size.
+!ky css, style, sizing, max-width
+!di 24
+!hp https://bluephrase.com/style/sizing/min-height.blue
+!ti min-height
+!de Specify the minimum height for elements that automatically change their size.
+!ky css, style, sizing, min-height
+!di 25
+!hp https://bluephrase.com/style/sizing/min-width.blue
+!ti min-width
+!de Specify the minimum width for elements that automatically change their size.
+!ky css, style, sizing, min-width
+!di 26
+!hp https://bluephrase.com/style/sizing/resize.blue
+!ti resize
+!de Specify whether or not the element can be resized by the user.
+!ky css, style, sizing, resize
+!di 27
+!hp https://bluephrase.com/style/sizing/width.blue
+!ti width
+!de Specify the element's initial width.
+!ky css, style, sizing, width
+!di 28
+!hp https://bluephrase.com/style/sizing.blue
+!ti sizing
+!de Specify the initial values for width and height, and the minimum and maximum values for expandable elements.
+!ky width, min-width, max-width, height, min-height, max-height, resize, css, style, sizing, sizing
+less 22 1;23 1
+listed 5 1;10 1
+letters 15 6;20 2;1 1;16 1;21 1;22 1;24 1
+lime 5 1;10 1
+light 14 7;20 2
+limited 18 1
+languages 11 1
+location 11 2
+list 12 1
+left 11 2;16 2;27 2;14 1;24 1;25 1
+lh 21 1;22 1;24 1
+larger 14 1
+low 3 1
+like 18 1
+maximum 28 13;22 9;23 9
+latin 18 1
+max 22 25;23 25;28 14;26 2
+long 2 6;20 2;18 1;22 1;23 1
+marks 11 10;10 6;12 6;20 6;3 4
+lowercase 15 11;20 4
+modes 16 2
+lines 20 6;5 5;7 5;8 5
+marked 3 1
+lang 15 5
+mark 20 8;3 5;10 3;11 3;12 3
+lower 26 1
+make 16 3;20 2;15 1
+length 4 1
+mm 1 1;19 1;21 1;22 1;23 1;24 1;25 1;27 1
+line 6 33;20 19;17 11;9 5;24 4;22 4;21 4;18 3;8 3;7 3;5 3;2 2;16 1
+meaningful 26 1
+letter 1 24;20 11;16 5;15 3
+manuscript 17 1
+lighting 14 3;20 2
+meanings 17 1
+keyword 18 3;11 2;12 2;17 2;5 1;8 1;10 1;13 1;16 1
+made 26 1
+keep 17 4;20 2;16 1;18 1
+more 16 3;14 2;20 2;5 1;10 1;22 1;23 1
+keystroke 4 5;20 2
+may 11 2;9 1;12 1;14 1
+keywords 2 1;6 1;7 1;12 1;17 1;26 1
+maroon 5 1;10 1
+korean 18 1
+must 26 1
+kanji 11 2;15 1
+middle 18 2
+kana 15 1
+min 24 21;25 21;28 14;26 2
+katakana 15 1
+measure 19 3;1 2;23 2;25 2;27 2
+keyboard 3 2
+millimeter 1 2;19 2;21 2;22 2;23 2;24 2;25 2;27 2
+japanese 11 2;15 2;18 1
+minimum 28 13;24 9;25 9
+integer 4 1
+need 18 1
+into 17 3;15 1
+needed 24 1;25 1
+improve 1 5;20 2
+nominal 21 1;22 1;24 1
+individual 20 7;1 5;9 1
+none 6 1;26 1
+item 5 1;10 1
+negative 1 1;14 1
+ic 1 1;19 1;23 1;25 1;27 1
+normal 16 1;17 1;18 1;22 1;23 1
+inch 1 2;19 2;21 2;22 2;23 2;24 2;25 2;27 2
+newlines 17 11;20 2
+initial 28 13;21 8;27 8
+needing 18 1
+interpretations 21 1;27 1
+necessary 18 2;2 1
+independent 1 1;19 1;21 1;22 1;23 1;24 1;25 1;27 1
+next 2 2;17 2;18 1
+increased 1 1
+new 17 8;2 2
+ideograph 1 2;19 2;23 2;25 2;27 2
+navy 5 1;10 1
+honored 17 4
+names 5 1;10 1
+horizontal 11 2;23 1;25 1;26 1
+nowrap 17 1
+html 15 5;21 2;22 2;24 2;1 1;3 1;19 1;23 1;25 1;27 1
+number 4 1
+handled 17 5;20 2
+opacity 5 1;10 1
+hanzi 11 2
+overflowing 18 5;20 2;24 1;25 1
+hex 5 2;10 2
+opposite 14 1
+hidden 22 1;23 1;24 1;25 1;26 1
+oh 4 3;20 2
+horizontally 11 1;26 1
+only 5 1;10 1;21 1;27 1
+htmls 3 5;20 2
+order 9 1;13 1
+hsla 5 5;10 5
+overlines 5 5;8 5;20 4
+height 22 49;24 41;28 41;21 40;26 2
+overflowed 22 1;23 1
+how 17 6;20 2
+one 20 4;13 3;9 3;7 1;2 1;10 1;5 1;14 1;16 1;18 1;6 1;26 1
+hiragana 15 1
+offset 14 4
+hsl 5 4;10 4
+occupy 15 1
+honor 17 2
+on 16 2;15 1;18 1
+high 3 1
+opaque 5 1;10 1
+gray 5 1;10 1
+open 12 5
+group 14 1
+overflow 2 29;20 9;17 7;18 1;22 1;23 1;24 1;25 1;26 1
+glyphs 3 5;20 2
+over 16 6;20 2;11 1
+grow 26 1
+overline 6 1
+green 5 3;10 3
+optional 14 1
+guillemet 3 1
+olive 5 1;10 1
+glyph 12 2;1 1;19 1;21 1;22 1;23 1;24 1;25 1;27 1
+present 18 3;20 2
+fixed 1 1;19 1;21 1;22 1;23 1;24 1;25 1;27 1
+px 1 1;8 1;19 1;21 1;22 1;23 1;24 1;25 1;27 1
+filled 12 5
+produce 17 1
+fill 24 1;25 1
+possible 17 1
+flowing 18 1
+point 1 1;19 1;21 1;22 1;23 1;24 1;25 1;27 1
+fit 2 2;17 2;22 2;23 2
+purple 5 1;10 1
+fully 2 2;5 2;10 2
+plus 21 2;27 2
+four 14 2
+padding 21 2;27 2
+fonts 19 3;1 2;21 2;22 2;23 2;24 2;25 2;27 2;16 1
+percentage 19 2;21 1;22 1;23 1;24 1;25 1;27 1
+fuchsia 5 1;10 1
+pre 17 4
+fourth 5 1;10 1
+providing 12 1
+force 15 6;20 6;16 5;18 3
+pc 1 1;19 1;21 1;22 1;23 1;24 1;25 1;27 1
+forces 16 2
+pica 1 1;19 1;21 1;22 1;23 1;24 1;25 1;27 1
+font 21 6;22 6;24 6;1 5;19 5;23 5;25 5;27 5;8 2
+positive 1 1;14 1
+form 15 1
+phrase 15 2;1 2;3 2;4 2;5 2;6 2;7 2;8 2;9 2;10 2;11 2;12 2;13 2;14 2;2 2;16 2;17 2;18 2;19 2;20 2;21 2;22 2;23 2;24 2;25 2;26 2;27 2;28 2
+for 28 18;23 7;22 7;25 6;24 6;20 6;12 5;7 5;19 3;16 2;18 1;14 1;11 1;26 1;4 1
+pt 1 1;19 1;21 1;22 1;23 1;24 1;25 1;27 1
+fine 1 5;20 2
+property 20 16;14 9;13 9;9 8;10 8;16 8;12 8;11 8;4 8;26 5;18 5;23 4;22 4;21 4;27 4;25 4;24 4;17 3;19 3;15 3;2 3;8 3;7 3;6 3;5 3;3 3;1 3
+full 15 4;24 2;25 2
+position 11 30;16 23;20 18
+formulas 5 2;10 2;18 1
+percent 21 1;22 1;23 1;24 1;25 1;27 1
+formula 5 2;10 2
+prevent 18 5;20 4;2 3
+file 8 1
+provide 3 1
+first 5 1;10 1;14 1;15 1
+pair 3 1;12 1
+each 15 2;14 1
+parent 21 1;22 1;23 1;24 1;25 1;27 1
+expects 14 1
+properties 20 9;13 6;9 5
+extra 22 1;23 1;24 1;25 1
+pairs 12 2
+english 18 1
+place 11 4;6 2
+expanded 22 3;23 3
+pixels 1 1;19 1;21 1;22 1;23 1;24 1;25 1;27 1
+equal 1 7;19 7;21 7;22 7;23 7;24 7;25 7;27 7
+quotation 3 6;20 2
+expand 1 3;20 2;22 1;23 1
+quotes 3 27;20 7
+examples 3 4;14 3;1 3;4 3;5 3;6 3;7 3;8 3;9 3;10 3;11 3;12 3;13 3;2 3;15 3;16 3;17 3;18 3;19 3;21 3;22 3;23 3;24 3;25 3;26 3;27 3
+quotations 3 4;20 2
+em 1 3;19 3;21 3;22 3;23 3;24 3;25 3;27 3;8 1
+quarter 1 1;19 1;21 1;22 1;23 1;24 1;25 1;27 1
+empty 24 1;25 1
+resized 26 8;28 2;24 1;25 1
+every 15 2
+readable 16 3;20 2
+example 3 2;12 2
+resizable 26 1
+either 13 2;22 1;23 1;24 1;25 1
+remove 26 1
+emphasis 20 44;11 34;13 31;10 30;12 30
+really 17 3;20 2
+expandable 28 5
+readability 1 5;20 2
+equivalent 15 2;4 1
+resize 26 21;28 7
+effects 1 5;20 2
+resizing 26 1
+everything 22 1;23 1
+rgb 5 7;10 7
+east 10 6;11 6;20 6;12 5;18 1
+relative 21 3;22 3;24 3;1 2;19 2;23 2;25 2;27 2
+effect 14 4;20 4;19 3
+right 17 6;11 2;16 2;27 2;14 1;18 1;26 1
+element 26 11;17 7;15 7;24 5;22 4;20 4;25 4;23 3;28 2;21 2;19 1;27 1;1 1
+required 14 1;22 1;23 1
+ex 21 1;22 1;24 1
+rule 22 1;23 1
+enclosures 3 5;20 2
+rlh 21 1;22 1;24 1
+end 18 1
+red 5 3;10 3
+elements 28 17;22 10;27 10;23 10;21 10;20 8;24 7;25 7;2 7;18 6;6 5;7 5;26 2;17 1
+rem 1 1;19 1;21 1;22 1;23 1;24 1;25 1;27 1
+edge 17 5;18 1
+reduced 1 1
+diffuse 14 1
+rgba 5 2;10 2
+declare 13 1
+radius 14 3
+digit 5 2;10 2
+side 16 2
+distance 1 5;14 5;20 4
+shrinks 24 1;25 1
+decoration 20 43;9 37;5 21;6 21;7 21;8 21;16 7
+short 24 1;25 1
+define 14 1
+specify 28 19;26 6;27 5;22 5;25 5;21 5;24 5;23 5;8 2;5 1;18 1;10 1;4 1
+depending 21 1;27 1
+such 8 1
+different 21 1;27 1
+sequences 17 1
+dot 12 2
+strike 6 1
+dangling 17 1
+some 3 1;9 1;18 1
+directly 12 1
+semantax 15 5
+decorative 20 12;6 8;7 8;5 3;8 3
+scripts 18 3
+determined 8 1
+spacing 19 26;1 24;20 18
+documents 15 1
+shrink 26 1
+determine 17 5;20 2
+specifying 1 2
+drop 14 5;20 2
+style 20 64;7 31;12 26;28 16;9 7;13 7;1 2;8 2;3 2;10 2;11 2;4 2;5 2;14 2;2 2;16 2;17 2;18 2;19 2;6 2;21 2;22 2;23 2;24 2;25 2;26 2;27 2;15 2
+direction 14 5;20 2
+spaces 17 12;18 12;20 12;2 5;4 4
+declaration 9 5;13 5;20 4
+string 2 6;18 2;20 2
+dashed 7 1
+scroll 26 1
+descenders 16 6;20 2
+subject 22 1;23 1;24 1;25 1
+dotted 7 1
+separating 14 1
+decorations 5 1
+somewhere 22 1;23 1
+double 12 2;7 1
+scatter 14 1
+defined 5 1;10 1
+set 20 15;3 5;5 5;7 5;8 5;4 5;22 2;23 2;27 1;24 1;25 1;21 1
+content 21 3;27 3
+strikethroughs 5 5;8 5;20 4
+change 28 10;22 5;23 5;24 5;25 5;15 4;26 3
+scrollbar 22 1;23 1;24 1;25 1
+color 5 32;10 32;20 24;13 5;14 2
+solid 7 1
+count 1 1;19 1;23 1;25 1;27 1
+sentence 18 1
+characters 20 11;2 6;1 5;16 5;6 3;3 1
+south 18 1
+commas 14 1
+stretches 18 1
+create 1 5;20 2;14 1
+specifies 12 5;20 2
+capitalize 15 1
+sum 21 1;27 1
+captialized 15 1
+sets 20 8;9 5;10 5;11 5;13 5
+ch 1 1;19 1;23 1;25 1;27 1
+symbol 12 5;20 2
+created 4 5;20 2
+special 5 1;10 1
+colors 5 1;10 1
+single 9 5;13 5;20 4;12 1;17 1
+currentcolor 5 1;10 1
+sesame 12 2
+cross 16 6;20 2
+silver 5 1;10 1
+choose 6 5;20 2;13 1
+shadow 14 28;20 9
+corner 26 1
+sizing 28 34;21 5;27 5;22 2;23 2;24 2;25 2;26 2
+casting 14 1
+source 14 6;20 2
+chinese 11 2;3 1;18 1
+space 17 22;20 7;18 2;1 1;22 1;23 1;24 1;25 1
+compatible 26 1
+spec 20 4;9 3;13 3
+cap 21 2;22 2;24 2
+size 4 21;22 15;25 15;23 15;24 15;27 12;21 12;19 10;1 10;28 10;20 7;26 4;15 4
+culturally 3 3;20 2
+small 15 1
+current 21 6;19 5;22 5;24 5;27 5;1 4;23 4;25 4
+syntax 3 2
+crosses 16 1
+standard 5 2;10 2
+compress 1 3;20 2
+specified 14 6;20 2;9 1;11 1;12 1;22 1;23 1
+capital 21 1;22 1;24 1
+top 21 2
+casts 14 5;20 2
+thickness 8 31;20 13;9 5;21 1;27 1
+collapsed 17 4
+triangle 12 2
+character 20 58;15 3;3 2;4 2;5 2;6 2;7 2;8 2;9 2;10 2;2 2;12 2;13 2;14 2;1 2;16 2;17 2;18 2;19 2;11 2
+treatment 20 8
+collapse 17 2
+teal 5 1;10 1
+cm 1 1;19 1;21 1;22 1;23 1;24 1;25 1;27 1
+tag 3 5;20 2
+cause 24 2;25 2
+things 18 1
+causing 22 2;23 2
+tags 3 1
+consecutive 17 1
+thai 18 1
+case 24 2;25 2
+transparency 5 1;10 1
+chemical 18 1
+traditional 3 1
+continue 18 1
+tab 4 26;20 9
+continued 18 1
+transparent 5 1;10 1
+can 26 8;28 4;1 1
+titling 1 5;20 2
+controls 18 1
+tune 1 5;20 2
+centimeter 1 1;19 1;21 1;22 1;23 1;24 1;25 1;27 1
+tabs 17 6;20 4;4 3
+completely 22 1;23 1
+text 20 110;9 37;13 31;16 28;10 27;14 26;7 26;11 26;12 26;6 26;5 22;15 21;8 21;18 9;24 4;25 4;22 3;23 3;17 2
+capped 22 1;23 1
+treated 17 1
+circle 12 4
+type 6 5;20 2
+css 20 40;28 16;5 4;10 4;1 2;6 2;7 2;8 2;9 2;3 2;11 2;12 2;13 2;14 2;2 2;16 2;17 2;18 2;19 2;4 2;21 2;22 2;23 2;24 2;25 2;26 2;27 2;15 2
+transform 15 21;20 7
+box 21 5;27 5;15 1;26 1
+two 1 1;6 1;14 1;21 1;27 1
+black 5 1;10 1
+typographic 20 10;14 3;21 1;1 1;19 1;4 1;3 1;22 1;23 1;24 1;25 1;27 1
+baseline 16 5;20 2
+underline 16 29;20 9;6 1
+browser 26 1
+up 22 1;23 1
+blur 14 3
+uppercase 15 11;20 4
+beneath 6 1
+underlines 16 9;20 8;5 5;8 5
+boundary 17 1
+urls 18 1
+below 16 6;20 2;11 1;14 1;24 1;25 1
+upon 21 1;27 1
+break 18 31;20 11;2 7;17 2
+using 14 5;20 2;3 1;5 1;8 1;10 1;12 1
+between 1 6;19 5;20 4;26 2;18 1;22 1;23 1
+under 11 1;16 1
+border 21 3;27 3
+units 21 4;22 4;23 4;24 4;25 4;27 4;1 2;19 2;8 1
+blue 5 4;10 4;15 1;4 1;1 1;6 1;7 1;8 1;9 1;3 1;11 1;12 1;13 1;14 1;2 1;16 1;17 1;18 1;19 1;20 1;21 1;22 1;23 1;24 1;25 1;26 1;27 1;28 1
+user 26 9;28 4
+bottom 21 2
+used 20 11;3 5;7 5;10 5;24 2;25 2;22 1;23 1
+both 13 6;20 2;26 2;11 1
+use 16 6;20 6;4 5;12 5;18 2;23 2;22 2;25 2;1 2;21 2;19 2;24 2;27 2;2 1;8 1;7 1;6 1;3 1
+based 15 1
+usage 11 2
+boundaries 2 5;18 5;20 4
+visual 26 2
+above 6 1;11 1;14 1
+values 28 10;14 9;9 4;13 4;16 4;17 4;18 4;15 3;3 3;10 3;11 3;12 3;5 3;2 3;4 3;6 3;7 3;8 3;19 3;21 3;22 3;23 3;24 3;25 3;26 3;27 3;1 3
+apply 6 5;20 2
+value 22 3;26 3;23 3;10 2;21 2;5 2;1 2;27 2;24 1;25 1;8 1
+appear 22 1;23 1;24 1;25 1
+versus 4 3;20 2
+actual 22 1;23 1
+variant 15 2
+area 21 2;27 2
+vertically 11 1;26 1
+amount 1 1;22 1;23 1
+visible 26 1
+adjacent 1 1
+vertical 11 2;16 2;22 1;24 1;26 1
+always 12 1
+which 12 5;6 5;20 4;24 2;25 2;21 1;16 1;22 1;23 1;19 1;1 1;26 1;27 1
+asian 10 6;11 6;20 6;12 5;18 2
+written 11 1
+abruptly 18 1
+without 2 5;20 2;18 1
+automatically 28 8;22 5;23 5;24 5;25 5;17 1
+word 18 23;19 21;20 16;2 3;17 2;1 1;15 1
+also 24 1;25 1
+whitespace 4 5;17 4;20 4;19 3
+allow 26 3
+words 19 8;20 6;1 5;15 1;18 1
+anywhere 2 1
+when 17 5;18 5;20 4;2 3;22 2;23 2;24 2;25 2;26 1
+across 14 5;20 2
+will 24 3;25 3;22 2;23 2
+advance 19 3;1 2;2 2;23 2;25 2;27 2
+writing 16 2
+affordance 26 2
+wavy 5 5;8 5;20 4;7 1
+adds 26 1
+within 17 5;2 2;20 2;22 1;23 1
+add 17 9;19 5;20 2
+whether 26 5;28 2;18 1
+aware 3 3;20 2
+white 17 21;20 7;5 1;10 1
+allows 26 1
+want 17 3;20 2
+auto 16 1;26 1
+wrap 2 21;20 7;17 2
+apostrophes 3 1
+width 23 44;28 41;25 36;27 35;4 5;19 3;2 2;17 2;1 2;26 2;20 2;15 1
+adjust 16 1
+with 20 11;3 6;7 5;10 5;15 4;8 1;14 1;26 1
+all 9 9;20 6;13 3;18 2
+wider 14 1
+alternatively 8 1
+yes 17 4;18 4
+aqua 5 1;10 1
+yellow 5 1;10 1
+attribute 15 5
+水 1 1;19 1;23 1;25 1;27 1
+additional 19 5;20 2

@@ -1,0 +1,17 @@
+!blue 2.0
+/*=============================================================================
+//
+// File:         ternmwords/pro/bump
+// Language:     prorenata script
+// Copyright:    Joe Honton © 2019
+// License:      CC-BY-NC-ND 4.0
+// Initial date: Nov 13, 2019
+// Contents:     Bump version, push repo
+//
+=============================================================================*/
+
+
+// ---------- bump version and push repo to origin ---------- 
+run {
+	sh npm version patch && git push && git push --tags 
+}
