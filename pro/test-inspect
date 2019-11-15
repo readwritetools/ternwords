@@ -1,19 +1,18 @@
 !blue 2.0
 //=============================================================================
 //
-// File:         ternwords/pro/test
+// File:         ternwords/pro/test-inspect
 // Language:     prorenata script
 // Copyright:    Joe Honton © 2019
 // License:      CC-BY-NC-ND 4.0
 // Initial date: Nov 13, 2019
 // Contents:     Convert ES6 import/export syntax to require/module syntax (test cases)
-//               then run bequiesce test cases
+//               then with node inspector
 //
 //=============================================================================
 
 template {
 	eximjs    eximjs <source> <dest>
-	bequiesce bequiesce <source>
 }
 
 // ---------- rewrite export/import (test) ---------- 
@@ -25,17 +24,15 @@ recurse {
 	exec      eximjs
 }
 
-// ---------- run test cases ---------- 
-recurse {
-	source    '../test/cases/dbg'
-	include   '*.test.js'
-	exclude   'interactive.test.js'
-	exec      bequiesce
-}
-
-
 // ---------- look for cruft in dbg compared to original src ---------- 
 compare {
 	source    '../test/cases/dbg'
 	dest      '../test/cases/src'
 }
+
+// ---------- run with inspector ---------- 
+run {
+	sh node --inspect-brk=165.227.11.3:9229 ../test/cases/dbg/interactive.test.js
+//	sh node --inspect=165.227.11.3:9229     ../test/cases/dbg/interactive.test.js
+}
+
