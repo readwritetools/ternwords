@@ -50,6 +50,9 @@ export default class TernWords {
     	expect(partialWord, 'String');
     	expect(maxWordCount, 'Number');
     	
+    	// no caps, no leading/trailing spaces
+    	partialWord = partialWord.toLowerCase().trim();
+    	
     	var words = new Array();
     	
     	// navigate to the prefix stem
@@ -95,6 +98,9 @@ export default class TernWords {
     getPrefixMatchesWeighted(partialWord, maxWordCount) {
     	expect(partialWord, 'String');
     	expect(maxWordCount, 'Number');
+    	
+    	// no caps, no leading/trailing spaces
+    	partialWord = partialWord.toLowerCase().trim();
     	
     	var ww = new Array();
     	
@@ -155,6 +161,9 @@ export default class TernWords {
     getExactMatch(word) {
     	expect(word, 'String');
     	
+    	// no caps, no leading/trailing spaces
+    	word = word.toLowerCase().trim();
+    	
     	var node = this.get(this.rootNode, word, 0);
     	if (node == null)
     		return new Array();
@@ -163,7 +172,7 @@ export default class TernWords {
     }
     
     //^ Get the best documents, by weight, using more than one word as search term
-    //> maxWordCount returns no more than this number of matches
+    //> maxMatchCount returns no more than this number of matches
 	//
     // A summed weight is equal to the sum of all the individual document weights
 	// A boost of 1000 is added to the summed weight for each word that the document contains
@@ -177,17 +186,20 @@ export default class TernWords {
 	//     doc28 = 1003
     //
     //< returns a list of documentIndexes that best match the searchWords
-    multiWordSearch(searchWords, maxWordCount) {
+    multiWordSearch(searchWords, maxMatchCount) {
     	expect(searchWords, 'Array');
-    	expect(maxWordCount, 'Number');
+    	expect(maxMatchCount, 'Number');
     	
     	var mappedItems = new Map();		// documentIndex => summedWeights
 
     	// loop over each search word
     	for (let i=0; i < searchWords.length; i++) {
     		
+        	// no caps, no leading/trailing spaces
+        	var word = searchWords[i].toLowerCase().trim();
+        	
     		// loop over each document/weight pair
-    		var weightedRefs = this.getExactMatch(searchWords[i]);
+    		var weightedRefs = this.getExactMatch(word);
     		for (let j=0; j < weightedRefs.length; j++) {
     			
     			var documentIndex = weightedRefs[j].documentIndex;
@@ -212,7 +224,7 @@ export default class TernWords {
     	
     	// drop the weights and just return the top N document indexes
     	var documentIndexes = new Array();
-    	for (let i=0; i < flat.length && i < maxWordCount; i++) {
+    	for (let i=0; i < flat.length && i < maxMatchCount; i++) {
     		documentIndexes.push(flat[i][0]);
     	}
     	
@@ -226,6 +238,9 @@ export default class TernWords {
     //< true if the full word is in the TST and has a value
     //< false if it is not in the TST
     wordExists(word) {
+    	// no caps, no leading/trailing spaces
+    	word = word.toLowerCase().trim();
+    	
     	var node = this.get(this.rootNode, word, 0);
     	return (node != null && node.weightRefs != null);
     }
@@ -234,7 +249,10 @@ export default class TernWords {
     //< false if it is not in the TST
     //< false if it is not a prefix to other words (even if it is a word itself)
     isPrefix(str) {
-    	var node = this.get(this.rootNode, word, 0);
+    	// no caps, no leading/trailing spaces
+    	str = str.toLowerCase().trim();
+    	
+    	var node = this.get(this.rootNode, str, 0);
 
     	// not a word and not a prefix
     	if (node == null)

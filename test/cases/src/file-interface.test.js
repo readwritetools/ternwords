@@ -1,5 +1,5 @@
 //=============================================================================
-// File:         ternwords/test/cases/core.test.js
+// File:         ternwords/test/cases/file-interface.test.js
 // Language:     Bequiesce
 // Copyright:    Joe Honton © 2019
 // License:      CC-BY-NC-ND 4.0
