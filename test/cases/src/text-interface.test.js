@@ -23,7 +23,7 @@ var nodeCount = ternWords.countNodes();
 var wordCount = ternWords.countWords();
 
 // @testing counts
-									;; docCount == 28 && nodeCount == 1632 && wordCount == 444
+									;; docCount == 28 && nodeCount == 2409 && wordCount == 588
 
 
 //@using
@@ -44,7 +44,7 @@ var isPrefix = ternWords.isPrefix(word);
 
 // @testing exists
 var word = 'less'; 					;; exists == true && isPrefix == false
-var word = 'letters';				;; exists == true && isPrefix == false
+var word = 'letters';				;; exists == true && isPrefix == true
 var word = '水';						;; exists == true && isPrefix == false
 var word = 'additional';			;; exists == true && isPrefix == false
 var word = 'add';					;; exists == true && isPrefix == true
@@ -61,13 +61,13 @@ var words = ternWords.getPrefixMatchesUnweighted(prefix, maxWords);
 var wordList = words.join(',');
 
 // @testing prefixMatchesUnweighted
-var prefix = 'ma';   var maxWords= 10;		;; wordList == 'max,made,make,manuscript,mark,marks,marked,maroon,maximum,may'
-var prefix = 'mar';  var maxWords= 10;		;; wordList == 'mark,marks,marked,maroon'
-var prefix = 'mark'; var maxWords= 10; 		;; wordList == 'mark,marks,marked'
-var prefix = 'ma';   var maxWords= 4;		;; wordList == 'max,made,make,manuscript'
-var prefix = 'mar';  var maxWords= 4;		;; wordList == 'mark,marks,marked,maroon'
-var prefix = 'mark'; var maxWords= 4; 		;; wordList == 'mark,marks,marked'
-var prefix = 're';   var maxWords= 15;		;; wordList == 'readability,readable,really,rem,red,reduced,relative,remove,required,resize,resizable,resized,resizing'
+var prefix = 'ma';   var maxWords= 10;		;; wordList == 'made,make,manuscript,mark,marked,marks,maroon,max,max-height,max-width'
+var prefix = 'mar';  var maxWords= 10;		;; wordList == 'mark,marked,marks,maroon'
+var prefix = 'mark'; var maxWords= 10; 		;; wordList == 'mark,marked,marks'
+var prefix = 'ma';   var maxWords= 4;		;; wordList == 'made,make,manuscript,mark'
+var prefix = 'mar';  var maxWords= 4;		;; wordList == 'mark,marked,marks,maroon'
+var prefix = 'mark'; var maxWords= 4; 		;; wordList == 'mark,marked,marks'
+var prefix = 're';   var maxWords= 15;		;; wordList == 'readability,readable,really,red,reduced,relative,rem,remove,required,resizable,resize,resized,resizing'
 var prefix = 'rea';  var maxWords= 15;		;; wordList == 'readability,readable,really'
 var prefix = 'read'; var maxWords= 15;		;; wordList == 'readability,readable'
 var prefix = 'readwrite'; var maxWords= 15;	;; wordList == ''
@@ -83,10 +83,10 @@ for (let i=0; i < words.length; i++) {
 
 
 // @testing prefixMatchesWeighted
-var prefix = 'ma';   var maxWords= 10;		;; wordList == 'max 25;maximum 13;marks 10;mark 8;make 3;may 2;made 1;manuscript 1;marked 1;maroon 1;'
-var prefix = 'ma';   var maxWords= 5;		;; wordList == 'max 25;maximum 13;marks 10;mark 8;make 3;'
-var prefix = 're';   var maxWords= 15;		;; wordList == 'resize 21;resized 8;readability 5;relative 3;red 3;really 3;readable 3;remove 1;required 1;reduced 1;resizable 1;rem 1;resizing 1;'
-var prefix = 're';   var maxWords= 5;		;; wordList == 'resize 21;resized 8;readability 5;relative 3;red 3;'
+var prefix = 'ma';   var maxWords= 10;		;; wordList == 'maxwidth 25;max 25;max-height 25;max-width 25;maxheight 25;maximum 13;marks 10;mark 8;make 3;made 1;'
+var prefix = 'ma';   var maxWords= 5;		;; wordList == 'maxwidth 25;max 25;max-height 25;max-width 25;maxheight 25;'
+var prefix = 're';   var maxWords= 15;		;; wordList == 'resize 21;resized 8;readability 5;really 3;red 3;relative 3;readable 3;remove 1;required 1;resizable 1;resizing 1;reduced 1;rem 1;'
+var prefix = 're';   var maxWords= 5;		;; wordList == 'resize 21;resized 8;readability 5;really 3;red 3;'
 var prefix = 'st';   var maxWords= 6;		;; wordList == 'style 64;string 6;strikethroughs 5;standard 2;stretches 1;strike 1;'
 var prefix = 'str';  var maxWords= 6;		;; wordList == 'string 6;strikethroughs 5;stretches 1;strike 1;'
 var prefix = 'stri';  var maxWords= 6;		;; wordList == 'string 6;strikethroughs 5;strike 1;'

@@ -21,7 +21,7 @@ var nodeCount = ternWords.countNodes();
 var wordCount = ternWords.countWords();
 
 // @testing counts
-									;; docCount == 28 && nodeCount == 1632 && wordCount == 444
+									;; docCount == 28 && nodeCount == 2409 && wordCount == 588
 
 
 //@using
