@@ -79,10 +79,9 @@ for (let i=0; i < words.length; i++) {
 	wordList += `${words[i]} ${weightRefs[0].weight};`;
 }
 
-
 // @testing prefixMatchesWeighted
-var prefix = 'ma';   var maxWords= 10;		;; wordList == 'maxwidth 25;max 25;max-height 25;max-width 25;maxheight 25;maximum 13;marks 10;mark 8;make 3;made 1;'
-var prefix = 'ma';   var maxWords= 5;		;; wordList == 'maxwidth 25;max 25;max-height 25;max-width 25;maxheight 25;'
+var prefix = 'ma';   var maxWords= 10;		;; wordList == 'max 25;max-height 25;max-width 25;maximum 13;marks 10;mark 8;make 3;made 1;marked 1;manuscript 1;'
+var prefix = 'ma';   var maxWords= 5;		;; wordList == 'max 25;max-height 25;max-width 25;maximum 13;marks 10;'
 var prefix = 're';   var maxWords= 15;		;; wordList == 'resize 21;resized 8;readability 5;really 3;red 3;relative 3;readable 3;remove 1;required 1;resizable 1;resizing 1;reduced 1;rem 1;'
 var prefix = 're';   var maxWords= 5;		;; wordList == 'resize 21;resized 8;readability 5;really 3;red 3;'
 var prefix = 'st';   var maxWords= 6;		;; wordList == 'style 64;string 6;strikethroughs 5;standard 2;stretches 1;strike 1;'

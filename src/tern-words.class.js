@@ -67,6 +67,8 @@ export default class TernWords {
     	if (node.mid != null)
     		this.getPartialsUnweighted(node.mid, partialWord, maxWordCount, words);
 
+    	this.removeHyphenatedDuplicates(words, maxWordCount);
+    	
     	return words;
     }   
     
@@ -83,8 +85,11 @@ export default class TernWords {
     	if (node.left != null && words.length < maxWordCount)
     		this.getPartialsUnweighted(node.left, partialWord, maxWordCount, words);
     	
-    	if (node.mid != null && words.length < maxWordCount)
+    	if (node.mid != null && words.length < maxWordCount) {
+    		if (node.glyph == '-') // any word with a hyphen will have a twin without a hyphen
+    			maxWordCount++;
     		this.getPartialsUnweighted(node.mid, partialWord + node.glyph, maxWordCount, words);
+    	}
 
     	if (node.right != null && words.length < maxWordCount)
     		this.getPartialsUnweighted(node.right, partialWord, maxWordCount, words);
@@ -116,23 +121,26 @@ export default class TernWords {
     	
     	// get everything below here
     	if (node.mid != null)
-    		this.getPartialsWeighted(node.mid, partialWord, ww);
+    		this.getPartialsWeighted(node.mid, partialWord, maxWordCount, ww);
 
     	// sort descending by weight
     	ww.sort((a,b) => b[1] - a[1]);
     	
-    	// return words without weights, and limit to maxWordCount
+    	// make an array of words without weights
     	var words = new Array();
-    	for (let i=0; i < ww.length && i < maxWordCount; i++)
+    	for (let i=0; i < ww.length; i++)
     		words.push(ww[i][0]);
     	
+    	this.removeHyphenatedDuplicates(words, maxWordCount);
+
     	return words;
     }
 
     // private
-    getPartialsWeighted(node, partialWord, ww) {
+    getPartialsWeighted(node, partialWord, maxWordCount, ww) {
     	expect(node, 'TernaryNode');
     	expect(partialWord, 'String');
+    	expect(maxWordCount, 'Number');
     	expect(ww, 'Array');
 
     	if (node.isWord()) {
@@ -141,13 +149,16 @@ export default class TernWords {
     	}
     	
     	if (node.left != null)
-    		this.getPartialsWeighted(node.left, partialWord, ww);
+    		this.getPartialsWeighted(node.left, partialWord, maxWordCount, ww);
     	
-    	if (node.mid != null)
-    		this.getPartialsWeighted(node.mid, partialWord + node.glyph, ww);
-
+    	if (node.mid != null) {
+    		if (node.glyph == '-') // any word with a hyphen will have a twin without a hyphen
+    			maxWordCount++;
+    		this.getPartialsWeighted(node.mid, partialWord + node.glyph, maxWordCount, ww);
+    	}
+    	
     	if (node.right != null)
-    		this.getPartialsWeighted(node.right, partialWord, ww);
+    		this.getPartialsWeighted(node.right, partialWord, maxWordCount, ww);
     }      
     
     //=============================================================================
@@ -356,5 +367,29 @@ export default class TernWords {
     		return this.get(node.mid, word, index + 1);
     	else
     		return node;
+    }
+    
+    // This cleans up the results when something like 'offset' is searched for
+    // It will remove 'offsetx' and 'offsety', but keep 'offset-x' and 'offset-y'
+    // For each word occurrence that has a hyphen, look for its matching occurrence that doesn't have a hyphen and remove it
+    removeHyphenatedDuplicates(words, maxWordCount) {
+    	expect(words, 'Array');
+    	expect(maxWordCount, 'Number');
+    	
+    	for (let i=words.length-1; i >= 0; i--) {
+    		var hyphenatedWord = words[i];
+    		var hasHyphen = (hyphenatedWord.indexOf('-') != -1) ? true : false;    		
+    		if (hasHyphen) {
+    			var plainWord = hyphenatedWord.replace(/-/g, '');		// remove all hyphens
+    			for (let j=0; j < words.length; j++) {
+    				if (words[j] == plainWord) 
+    					words.splice(j, 1);								// remove the plain word
+    			}
+    		}
+    	}
+    	
+    	// truncate to max length
+    	if (words.length > maxWordCount)
+    		words.length = maxWordCount;
     }
 }
