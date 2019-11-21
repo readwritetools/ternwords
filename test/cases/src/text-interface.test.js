@@ -31,6 +31,7 @@ var weightRefs = ternWords.getExactMatch(word);
 var sWeights = weightRefs.join(';');
 
 // @testing values
+var word = 'le'; 					;; sWeights == ''
 var word = 'less'; 					;; sWeights == '21 1;22 1'
 var word = 'letters';				;; sWeights == '14 6;19 2;0 1;15 1;20 1;21 1;23 1'
 var word = '水';						;; sWeights == '0 1;18 1;22 1;24 1;26 1';

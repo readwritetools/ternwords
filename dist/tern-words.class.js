@@ -45,7 +45,7 @@ module.exports = class TernWords {
     getExactMatch(e) {
         expect(e, 'String'), e = e.toLowerCase().trim();
         var t = this.get(this.rootNode, e, 0);
-        return null == t ? new Array() : t.weightRefs;
+        return null == t || null == t.weightRefs ? new Array() : t.weightRefs;
     }
     multiWordSearch(e, t) {
         expect(e, 'Array'), expect(t, 'Number');

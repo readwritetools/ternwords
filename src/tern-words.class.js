@@ -176,7 +176,7 @@ export default class TernWords {
     	word = word.toLowerCase().trim();
     	
     	var node = this.get(this.rootNode, word, 0);
-    	if (node == null)
+    	if (node == null || node.weightRefs == null)
     		return new Array();
     	else
     		return node.weightRefs;
