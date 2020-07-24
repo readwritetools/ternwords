@@ -13,7 +13,7 @@ module.exports = class TextInterface {
         !1;
         for (let e = 1; e < t.length; e++) {
             var n, s = e + 1;
-            '!' == (n = t[e]).charAt(0) ? this.processDocumentRef(s, n, r) : this.processWordRef(s, n, r);
+            13 == (n = t[e]).charCodeAt(n.length - 1) && (n = n.substr(0, n.length - 1)), '!' == n.charAt(0) ? this.processDocumentRef(s, n, r) : this.processWordRef(s, n, r);
         }
         return !0;
     }
