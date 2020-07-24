@@ -66,9 +66,10 @@ var prefix = 'pre';  						var maxWords= 5;		;; wordList == 'pre,pre-line,pre-wr
 //@using
 var words = ternWords.getPrefixMatchesWeighted(prefix, maxWords);
 var wordList = words.join(',');
+//console.log(wordList);
 
 // @testing prefixMatchesWeighted
-var prefix = 'text';   						var maxWords= 25;		;; wordList == 'text,text-decoration-color,text-decoration-line,text-decoration-style,text-decoration-thickness,text-emphasis,text-emphasis-color,text-emphasis-position,text-emphasis-style,text-shadow,text-transform,text-decoration,text-underline-position';
+var prefix = 'text';   						var maxWords= 25;		;; wordList == 'text,text-decoration,text-decoration-color,text-decoration-line,text-decoration-style,text-decoration-thickness,text-emphasis,text-emphasis-color,text-emphasis-position,text-emphasis-style,text-shadow,text-transform,text-underline-position'
 var prefix = 'offset';  					var maxWords= 5;		;; wordList == 'offset,offset-x,offset-y'
 var prefix = 'max';  						var maxWords= 6;		;; wordList == 'max,max-height,max-width,maximum'
 var prefix = 'pre';  						var maxWords= 7;		;; wordList == 'prevent,pre,present,pre-wrap,pre-line'

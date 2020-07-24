@@ -44,6 +44,11 @@ export default class TextInterface {
 		for (let i=1; i < lines.length; i++) {
 			var lineNumber = i+1;
 			var line = lines[i];
+
+			// remove any Windows CR at end of line
+	    	if (line.charCodeAt(line.length-1) == 13)
+	    		line = line.substr(0, line.length-1); 
+			
 			if (line.charAt(0) == '!')
 				this.processDocumentRef(lineNumber, line, ternWords);
 			else
