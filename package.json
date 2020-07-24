@@ -1,6 +1,6 @@
 {
   "name": "ternwords",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "TERNWORDS is a ternary trie of words created by SITEWORDS",
   "private": true,
   "main": "./dist/tern-words.class.js",
