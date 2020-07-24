@@ -1,3 +1,4 @@
 npm-debug.log
 test/test-case-dump.js
 dbg/
+node_modules/
