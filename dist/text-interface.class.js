@@ -1,5 +1,4 @@
 /* Copyright (c) 2020 Read Write Tools */
-/* Copyright (c) 2019 Read Write Tools */
 var expect = require('./utils/expect.js'), terminal = require('./utils/terminal.js'), DocumentRef = require('./document-ref.class.js'), WeightRef = require('./weight-ref.class.js');
 
 module.exports = class TextInterface {

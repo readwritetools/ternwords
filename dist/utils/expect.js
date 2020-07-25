@@ -1,5 +1,4 @@
 /* Copyright (c) 2020 Read Write Tools */
-/* Copyright (c) 2019 Read Write Tools */
 function expectOne(e, t) {
     return void 0 === e ? 'undefined' == t : null === e ? 'null' == t : void 0 === e.__proto__ ? 'no prototype' == t : e.constructor.name == t;
 }
