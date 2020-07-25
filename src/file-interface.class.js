@@ -13,7 +13,7 @@ import expect			from './utils/expect.js';
 import terminal			from './utils/terminal.js';
 import TextInterface	from './text-interface.class.js'
 import DocumentRef		from './document-ref.class.js';
-import WeightRef		from './weight-ref.class.js';
+//? import WeightRef		from './weight-ref.class.js';
 import {Pfile}			from 'joezone';
 import {TextReader}		from 'joezone';
 

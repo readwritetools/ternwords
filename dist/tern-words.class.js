@@ -1,9 +1,10 @@
 /* Copyright (c) 2019 Read Write Tools */
-var expect = require('./utils/expect.js'), TernaryNode = require('./ternary-node.class.js'), WeightRef = require('./weight-ref.class.js');
+var expect = require('./utils/expect.js'), TernaryNode = require('./ternary-node.class.js');
 
 module.exports = class TernWords {
     constructor() {
-        this.rootNode = null, this.documentRefs = new Array(), Object.seal(this);
+        this.rootNode = null, this.documentRefs = new Array(), this.listOfHosts = new Map(), 
+        this.listOfPaths = new Map(), Object.seal(this);
     }
     putWord(e, t) {
         expect(e, 'String'), expect(t, 'Array'), this.rootNode = this.put(this.rootNode, e, t, 0);
@@ -59,9 +60,9 @@ module.exports = class TernWords {
         }
         var o = Array.from(r);
         o.sort((e, t) => t[1] - e[1]);
-        var g = new Array();
-        for (let e = 0; e < o.length && e < t; e++) g.push(o[e][0]);
-        return g;
+        var a = new Array();
+        for (let e = 0; e < o.length && e < t; e++) a.push(o[e][0]);
+        return a;
     }
     wordExists(e) {
         e = e.toLowerCase().trim();

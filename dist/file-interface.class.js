@@ -1,5 +1,5 @@
 /* Copyright (c) 2019 Read Write Tools */
-var expect = require('./utils/expect.js'), terminal = require('./utils/terminal.js'), TextInterface = require('./text-interface.class.js'), DocumentRef = require('./document-ref.class.js'), WeightRef = require('./weight-ref.class.js'), Pfile = require('joezone').Pfile, TextReader = require('joezone').TextReader;
+var expect = require('./utils/expect.js'), terminal = require('./utils/terminal.js'), TextInterface = require('./text-interface.class.js'), DocumentRef = require('./document-ref.class.js'), Pfile = require('joezone').Pfile, TextReader = require('joezone').TextReader;
 
 module.exports = class FileInterface extends TextInterface {
     constructor() {

@@ -73,9 +73,24 @@ export default class TextInterface {
 		var value = line.substr(4);
 		
 		switch(key) {
+			// host definition, like 'https://example.com'
+			case 'ho':
+				var [hostIndex, host] = value.split(' ', 2);
+				hostIndex = parseInt(hostIndex);
+				ternWords.listOfHosts.set(hostIndex, host);
+				return;
+				
+			// path definition, like '' or 'dir' or 'dir/subdir'
+			case 'pa':
+				var [pathIndex, path] = value.split(' ', 2);
+				pathIndex = parseInt(pathIndex);
+				ternWords.listOfPaths.set(pathIndex, path);
+				return;
+
+			// document index	
 			case 'di':
 				var documentIndex = parseInt(value);
-				this.currentDocumentRef = new DocumentRef(documentIndex);
+				this.currentDocumentRef = new DocumentRef(ternWords, documentIndex);
 				ternWords.documentRefs.push(this.currentDocumentRef);
 				
 				// sanity check: documentRefs[0] will have a documentIndex == 0
@@ -83,19 +98,26 @@ export default class TextInterface {
 				if (thisIndex != documentIndex) 
 					terminal.abnormal(`DocumentIndex on line number ${lineNumber} expected to be ${thisIndex}, not ${documentIndex}`);
 				return;
-				
-			case 'hp':
-				this.currentDocumentRef.hostPath = value;
+			
+			// URL	
+			case 'ur':
+				var [hostIndex, pathIndex, document] = value.split(' ', 3);		// 0 2 term-mark.blue
+				this.currentDocumentRef.hostIndex = parseInt(hostIndex);		// 0
+				this.currentDocumentRef.pathIndex = parseInt(pathIndex);		// 2
+				this.currentDocumentRef.document = document;					// term-mark.blue
 				return;
 				
+			// title	
 			case 'ti':
 				this.currentDocumentRef.title = value;
 				return;
 				
+			// description	
 			case 'de':
 				this.currentDocumentRef.description = value;
 				return;
 				
+			// keywords	
 			case 'ky':
 				this.currentDocumentRef.keywords = value;
 				return;

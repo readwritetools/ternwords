@@ -5,56 +5,66 @@ module.exports = class TextInterface {
     constructor() {
         this.currentDocumentRef = null, Object.seal(this);
     }
-    readSiteWords(e, r) {
-        expect(e, 'String'), expect(r, 'TernWords');
-        var t = e.split('\n');
-        if (0 == t.length) return !1;
-        if (-1 == (n = t[0]).indexOf('rwsearch') || -1 == n.indexOf('sitewords')) return terminal.abnormal('This doesn\'t look like an RWSEARCH sitewords file. The first line should begin with the signature "!rwsearch 1.0 sitewords". Skipping.'), 
+    readSiteWords(e, t) {
+        expect(e, 'String'), expect(t, 'TernWords');
+        var r = e.split('\n');
+        if (0 == r.length) return !1;
+        if (-1 == (s = r[0]).indexOf('rwsearch') || -1 == s.indexOf('sitewords')) return terminal.abnormal('This doesn\'t look like an RWSEARCH sitewords file. The first line should begin with the signature "!rwsearch 1.0 sitewords". Skipping.'), 
         !1;
-        for (let e = 1; e < t.length; e++) {
-            var n, s = e + 1;
-            13 == (n = t[e]).charCodeAt(n.length - 1) && (n = n.substr(0, n.length - 1)), '!' == n.charAt(0) ? this.processDocumentRef(s, n, r) : this.processWordRef(s, n, r);
+        for (let e = 1; e < r.length; e++) {
+            var s, n = e + 1;
+            13 == (s = r[e]).charCodeAt(s.length - 1) && (s = s.substr(0, s.length - 1)), '!' == s.charAt(0) ? this.processDocumentRef(n, s, t) : this.processWordRef(n, s, t);
         }
         return !0;
     }
-    processDocumentRef(e, r, t) {
-        expect(e, 'Number'), expect(r, 'String'), expect(t, 'TernWords');
-        var n = r.substr(1, 2), s = r.substr(4);
-        switch (n) {
-          case 'di':
-            var i = parseInt(s);
-            this.currentDocumentRef = new DocumentRef(i), t.documentRefs.push(this.currentDocumentRef);
-            var o = t.documentRefs.length - 1;
-            return void (o != i && terminal.abnormal(`DocumentIndex on line number ${e} expected to be ${o}, not ${i}`));
+    processDocumentRef(e, t, r) {
+        expect(e, 'Number'), expect(t, 'String'), expect(r, 'TernWords');
+        var s = t.substr(1, 2), n = t.substr(4);
+        switch (s) {
+          case 'ho':
+            var [i, o] = n.split(' ', 2);
+            return i = parseInt(i), void r.listOfHosts.set(i, o);
 
-          case 'hp':
-            return void (this.currentDocumentRef.hostPath = s);
+          case 'pa':
+            var [c, u] = n.split(' ', 2);
+            return c = parseInt(c), void r.listOfPaths.set(c, u);
+
+          case 'di':
+            var a = parseInt(n);
+            this.currentDocumentRef = new DocumentRef(r, a), r.documentRefs.push(this.currentDocumentRef);
+            var l = r.documentRefs.length - 1;
+            return void (l != a && terminal.abnormal(`DocumentIndex on line number ${e} expected to be ${l}, not ${a}`));
+
+          case 'ur':
+            var [i, c, d] = n.split(' ', 3);
+            return this.currentDocumentRef.hostIndex = parseInt(i), this.currentDocumentRef.pathIndex = parseInt(c), 
+            void (this.currentDocumentRef.document = d);
 
           case 'ti':
-            return void (this.currentDocumentRef.title = s);
+            return void (this.currentDocumentRef.title = n);
 
           case 'de':
-            return void (this.currentDocumentRef.description = s);
+            return void (this.currentDocumentRef.description = n);
 
           case 'ky':
-            return void (this.currentDocumentRef.keywords = s);
+            return void (this.currentDocumentRef.keywords = n);
 
           default:
-            return void terminal.abnormal(`Unrecognized document ref on line number ${e} ${r}`);
+            return void terminal.abnormal(`Unrecognized document ref on line number ${e} ${t}`);
         }
     }
-    processWordRef(e, r, t) {
-        if (expect(e, 'Number'), expect(r, 'String'), expect(t, 'TernWords'), '' != r) {
-            var n = r.indexOf(' ');
-            if (-1 != n) {
-                var s = r.substr(0, n), i = r.substr(n + 1).split(';'), o = new Array();
+    processWordRef(e, t, r) {
+        if (expect(e, 'Number'), expect(t, 'String'), expect(r, 'TernWords'), '' != t) {
+            var s = t.indexOf(' ');
+            if (-1 != s) {
+                var n = t.substr(0, s), i = t.substr(s + 1).split(';'), o = new Array();
                 for (let e = 0; e < i.length; e++) {
                     var [c, u] = i[e].split(' ');
                     c = parseInt(c), u = parseInt(u);
                     var a = new WeightRef(c, u);
                     o.push(a);
                 }
-                t.putWord(s, o);
+                r.putWord(n, o);
             }
         }
     }

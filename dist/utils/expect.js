@@ -1,6 +1,4 @@
 /* Copyright (c) 2019 Read Write Tools */
-var StackTrace = require('./stack-trace.class.js');
-
 function expectOne(e, t) {
     return void 0 === e ? 'undefined' == t : null === e ? 'null' == t : void 0 === e.__proto__ ? 'no prototype' == t : e.constructor.name == t;
 }
@@ -10,7 +8,7 @@ function logicMessage(e) {
 }
 
 function expectMessage(e) {
-    e = e || '', writeToConsoleOrStderr(`[*EXPECT*]${StackTrace.getFunctionName(4)} ${e}\n`);
+    e = e || '', writeToConsoleOrStderr(`[*EXPECT*]${getStackTraceFunctionName(4)} ${e}\n`);
 }
 
 function writeToConsoleOrStderr(e) {
@@ -18,6 +16,11 @@ function writeToConsoleOrStderr(e) {
         if ('object' != typeof process || 'object' != typeof process.stderr || 'function' != typeof process.stderr.write) throw new Error(e);
         process.stderr.write(e);
     }
+}
+
+function getStackTraceFunctionName(e) {
+    var t = new Error().stack.split('\n')[e], o = /at (.*) ?\(/g.exec(t), r = '';
+    return null == o ? t : (o.length > 1 && (r += o[1].trim()), `{${r = r.padStart(30, ' ')}}`);
 }
 
 module.exports = function expect(e, t, o) {

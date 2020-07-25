@@ -20,7 +20,7 @@ var weightRefs = ternWords.getExactMatch(word);
 var sWeights = weightRefs.join(';');
 
 //@testing values
-var word = 'text'; 								;; sWeights == '19 110;8 37;12 31;15 28;9 27;13 26;6 26;10 26;11 26;5 26;4 22;14 21;7 21;17 9;23 4;24 4;21 3;22 3;16 2'
+var word = 'text'; 								;; sWeights == '19 110;8 37;12 31;15 28;9 27;5 26;6 26;10 26;11 26;13 26;4 22;7 21;14 21;17 9;23 4;24 4;21 3;22 3;16 2'
 var word = 'text-decoration'; 					;; sWeights == '8 21;19 9;15 5'
 var word = 'text-decoration-color'; 			;; sWeights == '4 21;19 7'
 var word = 'text-decoration-line';				;; sWeights == '5 21;19 9;8 5'
@@ -66,7 +66,6 @@ var prefix = 'pre';  						var maxWords= 5;		;; wordList == 'pre,pre-line,pre-wr
 //@using
 var words = ternWords.getPrefixMatchesWeighted(prefix, maxWords);
 var wordList = words.join(',');
-//console.log(wordList);
 
 // @testing prefixMatchesWeighted
 var prefix = 'text';   						var maxWords= 25;		;; wordList == 'text,text-decoration,text-decoration-color,text-decoration-line,text-decoration-style,text-decoration-thickness,text-emphasis,text-emphasis-color,text-emphasis-position,text-emphasis-style,text-shadow,text-transform,text-underline-position'

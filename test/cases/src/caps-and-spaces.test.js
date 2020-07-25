@@ -1,5 +1,5 @@
 //=============================================================================
-// File:         ternwords/test/cases/cps-and-spaces.test.js
+// File:         ternwords/test/cases/caps-and-spaces.test.js
 // Language:     Bequiesce
 // Copyright:    Joe Honton © 2019
 // License:      CC-BY-NC-ND 4.0
@@ -13,15 +13,6 @@ import TernWords from '../../../dbg/tern-words.class.js';
 var fileInterface = new FileInterface();
 var ternWords = new TernWords();
 fileInterface.readSiteWords('../test/fixtures/input/style-ternary', ternWords);
-
-
-//@using
-var docCount = ternWords.documentRefs.length;
-var nodeCount = ternWords.countNodes();
-var wordCount = ternWords.countWords();
-
-// @testing counts
-									;; docCount == 28 && nodeCount == 2409 && wordCount == 588
 
 
 //@using
@@ -85,8 +76,8 @@ for (let i=0; i < weightRefs.length; i++) {
 }
 
 // @testing getDocumentRef
-var word = ' Text ';  		;; titleList == 'character;text-decoration;text-emphasis;text-underline-position;text-emphasis-color;text-shadow;text-decoration-style;text-emphasis-position;text-emphasis-style;text-decoration-line;text-decoration-color;text-transform;text-decoration-thickness;word-break;min-height;min-width;max-height;max-width;white-space;'
-var word = ' Character ';  	;; titleList == 'character;text-transform;quotes;tab-size;text-decoration-color;text-decoration-line;text-decoration-style;text-decoration-thickness;text-decoration;text-emphasis-color;overflow-wrap;text-emphasis-style;text-emphasis;text-shadow;letter-spacing;text-underline-position;white-space;word-break;word-spacing;text-emphasis-position;'
+var word = ' Text ';  		;; titleList == 'character;text-decoration;text-emphasis;text-underline-position;text-emphasis-color;text-decoration-line;text-decoration-style;text-emphasis-position;text-emphasis-style;text-shadow;text-decoration-color;text-decoration-thickness;text-transform;word-break;min-height;min-width;max-height;max-width;white-space;'
+var word = ' Character ';  	;; titleList == 'character;text-transform;letter-spacing;overflow-wrap;quotes;tab-size;text-decoration-color;text-decoration-line;text-decoration-style;text-decoration-thickness;text-decoration;text-emphasis-color;text-emphasis-position;text-emphasis-style;text-emphasis;text-shadow;text-underline-position;white-space;word-break;word-spacing;'
 var word = ' Strike ';  	;; titleList == 'text-decoration-line;'
 var	word = ' Decoration ';	;; titleList == 'character;text-decoration;text-decoration-color;text-decoration-line;text-decoration-style;text-decoration-thickness;text-underline-position;'
 	
@@ -101,5 +92,5 @@ for (let i=0; i < documentIndexes.length; i++) {
 
 // @testing multiWordSearch
 var max = 10; var multiWords = [' Min ', ' Max '];  					;; titleList == 'sizing;resize;max-height;max-width;min-height;min-width;'
-var max = 10; var multiWords = [' Decoration ', ' Character '];  		;; titleList == 'character;text-decoration;text-decoration-color;text-decoration-line;text-decoration-style;text-decoration-thickness;text-underline-position;text-transform;quotes;tab-size;'
+var max = 10; var multiWords = [' Decoration ', ' Character '];  		;; titleList == 'character;text-decoration;text-decoration-color;text-decoration-line;text-decoration-style;text-decoration-thickness;text-underline-position;text-transform;letter-spacing;overflow-wrap;'
 		

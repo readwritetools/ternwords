@@ -12,13 +12,14 @@
 
 import expect			from './utils/expect.js';
 import TernaryNode		from './ternary-node.class.js';
-import WeightRef		from './weight-ref.class.js';
 
 export default class TernWords {
 	
     constructor() {
     	this.rootNode = null;				// the Ternary Search Trie root 
-		this.documentRefs = new Array();	// DocumentRefs, access by array index
+		this.documentRefs = new Array();	// access by DocumentRefs.documentIndex
+		this.listOfHosts = new Map();		// access by DocumentRefs.hostIndex
+		this.listOfPaths = new Map();		// access by DocumentRefs.pathIndex
 		
 		Object.seal(this);
     }
@@ -30,6 +31,8 @@ export default class TernWords {
     //^ Call this function for each word to be added to the TST
     //> word is the full word
     //> weightRefs is an array of weightRef objects
+    //    where each weightRef is a string consisting of a documentIndex and a weight
+    //    so '2 5' is documentIndex 2 with a weight of 5 
     putWord(word, weightRefs) {
     	expect(word, 'String');
     	expect(weightRefs, 'Array');
@@ -319,7 +322,7 @@ export default class TernWords {
     //^ Add a word and its weightRefs to the TST
     //> node is the current node, which may be null because it's the root or because its an undiscovered leaf 
     //> word is always the full word
-    //> weightRefs is the value to stuff into the final node, and array of weightRef objects
+    //> weightRefs is the value to stuff into the final node, an array of weightRef objects
     //> index is the current index into the word 
     put(node, word, weightRefs, index) {
     	expect(node, ['null', 'TernaryNode']);

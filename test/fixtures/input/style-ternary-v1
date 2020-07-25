@@ -1,145 +1,141 @@
 !rwsearch 1.0 sitewords
-!ho 0 https://bluephrase.com
-!pa 0 style/character
-!pa 1 style
-!pa 2 style/sizing
 !di 0
-!ur 0 0 letter-spacing.blue
+!hp https://bluephrase.com/style/character/letter-spacing.blue
 !ti letter-spacing
 !de Fine tune the distance between the individual characters of words to create titling effects and to improve readability.
 !ky css, style, character, letter-spacing
 !di 1
-!ur 0 0 overflow-wrap.blue
+!hp https://bluephrase.com/style/character/overflow-wrap.blue
 !ti overflow-wrap
 !de Break a long string of characters without spaces so that it doesn't overflow the element's boundaries.
 !ky css, style, character, overflow-wrap
 !di 2
-!ur 0 0 quotes.blue
+!hp https://bluephrase.com/style/character/quotes.blue
 !ti quotes
 !de Set the glyphs used as quotation-mark enclosures with HTML's <q> tag.
 !ky css, style, character, quotes
 !di 3
-!ur 0 0 tab-size.blue
+!hp https://bluephrase.com/style/character/tab-size.blue
 !ti tab-size
 !de Use this property to set the width of the whitespace created by a TAB keystroke.
 !ky css, style, character, tab-size
 !di 4
-!ur 0 0 text-decoration-color.blue
+!hp https://bluephrase.com/style/character/text-decoration-color.blue
 !ti text-decoration-color
 !de Set the color of underlines, overlines, strikethroughs, and wavy lines.
 !ky css, style, character, text-decoration-color
 !di 5
-!ur 0 0 text-decoration-line.blue
+!hp https://bluephrase.com/style/character/text-decoration-line.blue
 !ti text-decoration-line
 !de Choose which type of decorative line to apply to the element's text.
 !ky css, style, character, text-decoration-line
 !di 6
-!ur 0 0 text-decoration-style.blue
+!hp https://bluephrase.com/style/character/text-decoration-style.blue
 !ti text-decoration-style
 !de Set the style for decorative lines used with the element's text.
 !ky css, style, character, text-decoration-style
 !di 7
-!ur 0 0 text-decoration-thickness.blue
+!hp https://bluephrase.com/style/character/text-decoration-thickness.blue
 !ti text-decoration-thickness
 !de Set the thickness of underlines, overlines, strikethroughs, and wavy lines.
 !ky css, style, character, text-decoration-thickness
 !di 8
-!ur 0 0 text-decoration.blue
+!hp https://bluephrase.com/style/character/text-decoration.blue
 !ti text-decoration
 !de This property sets all of these properties in a single declaration: text-decoration-line, text-decoration-style and text-decoration-thickness.
 !ky css, style, character, text-decoration
 !di 9
-!ur 0 0 text-emphasis-color.blue
+!hp https://bluephrase.com/style/character/text-emphasis-color.blue
 !ti text-emphasis-color
 !de This property sets the color used with East Asian text emphasis marks.
 !ky css, style, character, text-emphasis-color
 !di 10
-!ur 0 0 text-emphasis-position.blue
+!hp https://bluephrase.com/style/character/text-emphasis-position.blue
 !ti text-emphasis-position
 !de This property sets the position of East Asian emphasis marks.
 !ky css, style, character, text-emphasis-position
 !di 11
-!ur 0 0 text-emphasis-style.blue
+!hp https://bluephrase.com/style/character/text-emphasis-style.blue
 !ti text-emphasis-style
 !de This property specifies which symbol to use for East Asian text emphasis marks.
 !ky css, style, character, text-emphasis-style
 !di 12
-!ur 0 0 text-emphasis.blue
+!hp https://bluephrase.com/style/character/text-emphasis.blue
 !ti text-emphasis
 !de This property sets both the text-emphasis-color and text-emphasis-style properties in a single declaration.
 !ky css, style, character, text-emphasis
 !di 13
-!ur 0 0 text-shadow.blue
+!hp https://bluephrase.com/style/character/text-shadow.blue
 !ti text-shadow
 !de This property casts a drop shadow across text using a light source from a specified direction and distance.
 !ky css, style, character, text-shadow
 !di 14
-!ur 0 0 text-transform.blue
+!hp https://bluephrase.com/style/character/text-transform.blue
 !ti text-transform
 !de Force the letters of an element to be UPPERCASE or lowercase.
 !ky css, style, character, text-transform
 !di 15
-!ur 0 0 text-underline-position.blue
+!hp https://bluephrase.com/style/character/text-underline-position.blue
 !ti text-underline-position
 !de Use this property to force text-decoration underlines to be below the baseline of characters, so that the underline does not cross over letter descenders.
 !ky css, style, character, text-underline-position
 !di 16
-!ur 0 0 white-space.blue
+!hp https://bluephrase.com/style/character/white-space.blue
 !ti white-space
 !de Determine how spaces, tabs and newlines are handled within an element.
 !ky css, style, character, white-space
 !di 17
-!ur 0 0 word-break.blue
+!hp https://bluephrase.com/style/character/word-break.blue
 !ti word-break
 !de Prevent text that has no spaces from overflowing the element's boundaries.
 !ky css, style, character, word-break
 !di 18
-!ur 0 0 word-spacing.blue
+!hp https://bluephrase.com/style/character/word-spacing.blue
 !ti word-spacing
 !de Add additional spacing between words.
 !ky css, style, character, word-spacing
 !di 19
-!ur 0 1 character.blue
+!hp https://bluephrase.com/style/character.blue
 !ti character
 !de These properties set the typographic treatment used with individual characters.
 !ky letter-spacing, quotes, tab-size, text-decoration, text-decoration-line, text-decoration-color, text-decoration-style, text-decoration-thickness, text-emphasis, text-emphasis-style, text-emphasis-color, text-emphasis-position, text-shadow, text-transform, text-underline-position, white-space, word-break, word-spacing, word-wrap, css, style, character, character
 !di 20
-!ur 0 2 height.blue
+!hp https://bluephrase.com/style/sizing/height.blue
 !ti height
 !de Specify the element's initial height.
 !ky css, style, sizing, height
 !di 21
-!ur 0 2 max-height.blue
+!hp https://bluephrase.com/style/sizing/max-height.blue
 !ti max-height
 !de Specify the maximum height for elements that automatically change their size.
 !ky css, style, sizing, max-height
 !di 22
-!ur 0 2 max-width.blue
+!hp https://bluephrase.com/style/sizing/max-width.blue
 !ti max-width
 !de Specify the maximum width for elements that automatically change their size.
 !ky css, style, sizing, max-width
 !di 23
-!ur 0 2 min-height.blue
+!hp https://bluephrase.com/style/sizing/min-height.blue
 !ti min-height
 !de Specify the minimum height for elements that automatically change their size.
 !ky css, style, sizing, min-height
 !di 24
-!ur 0 2 min-width.blue
+!hp https://bluephrase.com/style/sizing/min-width.blue
 !ti min-width
 !de Specify the minimum width for elements that automatically change their size.
 !ky css, style, sizing, min-width
 !di 25
-!ur 0 2 resize.blue
+!hp https://bluephrase.com/style/sizing/resize.blue
 !ti resize
 !de Specify whether or not the element can be resized by the user.
 !ky css, style, sizing, resize
 !di 26
-!ur 0 2 width.blue
+!hp https://bluephrase.com/style/sizing/width.blue
 !ti width
 !de Specify the element's initial width.
 !ky css, style, sizing, width
 !di 27
-!ur 0 1 sizing.blue
+!hp https://bluephrase.com/style/sizing.blue
 !ti sizing
 !de Specify the initial values for width and height, and the minimum and maximum values for expandable elements.
 !ky width, min-width, max-width, height, min-height, max-height, resize, css, style, sizing, sizing
@@ -170,7 +166,7 @@ line-through 5 1
 maximum 27 13;21 10;22 10;20 1;23 1;24 1;26 1
 line-height 20 2;21 2;23 2
 maxwidth 22 25;27 7;25 1
-line 5 33;19 19;16 11;8 5;20 4;21 4;23 4;4 3;6 3;7 3;17 3;1 2;15 1
+line 5 33;19 19;16 11;8 5;23 4;21 4;20 4;17 3;7 3;6 3;4 3;1 2;15 1
 meaningful 25 1
 limited 17 1
 meanings 16 1
@@ -249,7 +245,7 @@ olive 4 1;9 1
 initial 27 13;20 8;26 8
 on 15 2;14 1;17 1
 individual 19 7;0 5;8 1
-one 19 4;8 3;12 3;1 1;4 1;5 1;6 1;9 1;13 1;15 1;17 1;25 1
+one 19 4;12 3;8 3;6 1;1 1;9 1;4 1;13 1;15 1;17 1;5 1;25 1
 independent 0 1;18 1;20 1;21 1;22 1;23 1;24 1;26 1
 only 4 1;9 1;20 1;26 1
 increased 0 1
@@ -303,7 +299,7 @@ percent 20 1;21 1;22 1;23 1;24 1;26 1
 green 4 3;9 3
 percentage 18 2;20 2;21 2;22 2;23 2;24 2;26 2
 gray 4 1;9 1
-phrase 0 1;1 1;2 1;3 1;4 1;5 1;6 1;7 1;8 1;9 1;10 1;11 1;12 1;13 1;14 1;15 1;16 1;17 1;18 1;19 1;20 1;21 1;22 1;23 1;24 1;25 1;26 1;27 1
+phrase 14 2;0 2;2 2;3 2;4 2;5 2;6 2;7 2;8 2;9 2;10 2;11 2;12 2;13 2;1 2;15 2;16 2;17 2;18 2;19 2;20 2;21 2;22 2;23 2;24 2;25 2;26 2;27 2
 glyphs 2 5;19 2
 pica 0 1;18 1;20 1;21 1;22 1;23 1;24 1;26 1
 glyph 11 2;0 1;18 1;20 1;21 1;22 1;23 1;24 1;26 1
@@ -339,7 +335,7 @@ produce 16 1
 formula 4 2;9 2
 properties 19 9;12 6;8 5
 form 14 1
-property 19 16;12 9;13 9;3 8;8 8;9 8;10 8;11 8;15 8;17 5;25 5;20 4;21 4;22 4;23 4;24 4;26 4;0 3;1 3;2 3;4 3;5 3;6 3;7 3;14 3;16 3;18 3
+property 19 16;13 9;12 9;8 8;9 8;15 8;11 8;10 8;3 8;25 5;17 5;22 4;21 4;20 4;26 4;24 4;23 4;16 3;18 3;14 3;1 3;7 3;6 3;5 3;4 3;2 3;0 3
 forces 15 2
 provide 2 1
 force 14 6;19 6;15 5;17 3
@@ -384,7 +380,7 @@ expandable 27 5
 required 13 1;21 1;22 1
 expand 0 3;19 2;21 1;22 1
 resizable 25 1
-examples 2 4;0 3;1 3;3 3;4 3;5 3;6 3;7 3;8 3;9 3;10 3;11 3;12 3;13 3;14 3;15 3;16 3;17 3;18 3;20 3;21 3;22 3;23 3;24 3;25 3;26 3
+examples 2 4;13 3;0 3;3 3;4 3;5 3;6 3;7 3;8 3;9 3;10 3;11 3;12 3;1 3;14 3;15 3;16 3;17 3;18 3;20 3;21 3;22 3;23 3;24 3;25 3;26 3
 resize 25 21;27 7
 example 2 2;11 2
 resized 25 8;27 2;23 1;24 1
@@ -410,9 +406,9 @@ emphasis 19 44;10 34;12 31;9 30;11 30
 rule 21 1;22 1
 em 0 3;18 3;20 3;21 3;22 3;23 3;24 3;26 3;7 1
 scatter 13 1
-elements 27 17;20 10;21 10;22 10;26 10;19 8;1 7;23 7;24 7;17 6;5 5;6 5;25 2;16 1
+elements 27 17;21 10;26 10;22 10;20 10;19 8;23 7;24 7;1 7;17 6;5 5;6 5;25 2;16 1
 scripts 17 3
-element 25 11;14 7;16 7;23 5;19 4;21 4;24 4;22 3;20 2;27 2;0 1;18 1;26 1
+element 25 11;16 7;14 7;23 5;21 4;19 4;24 4;22 3;27 2;20 2;18 1;26 1;0 1
 scroll 25 1
 either 21 3;22 3;23 3;24 3;12 2;20 2;26 2
 scrollbar 21 1;22 1;23 1;24 1
@@ -427,7 +423,7 @@ sequences 16 1
 each 14 2;13 1
 sesame 11 2
 drop 13 5;19 2
-set 19 15;2 5;3 5;4 5;6 5;7 5;21 2;22 2;20 1;23 1;24 1;26 1
+set 19 15;2 5;4 5;6 5;7 5;3 5;21 2;22 2;26 1;23 1;24 1;20 1
 doublecircle 11 2
 sets 19 8;8 5;9 5;10 5;12 5
 double-circle 11 2
@@ -445,7 +441,7 @@ silver 4 1;9 1
 display 20 1;21 1;22 1;23 1;24 1;26 1
 single 8 5;12 5;19 4;11 1;16 1
 directly 11 1
-size 3 21;21 15;22 15;23 15;24 15;20 12;26 12;0 10;18 10;27 10;19 7;14 4;25 4
+size 3 21;21 15;24 15;22 15;23 15;26 12;20 12;18 10;0 10;27 10;19 7;25 4;14 4
 direction 13 5;19 2
 sizing 27 34;20 5;26 5;21 2;22 2;23 2;24 2;25 2
 digit 4 2;9 2
@@ -481,21 +477,21 @@ specified 13 6;19 2;8 1;10 1;11 1;21 1;22 1
 dashed 6 1
 specifies 11 5;19 2
 dangling 16 1
-specify 27 19;25 6;20 5;21 5;22 5;23 5;24 5;26 5;7 2;3 1;4 1;9 1;17 1
+specify 27 19;25 6;26 5;21 5;24 5;20 5;23 5;22 5;7 2;4 1;17 1;9 1;3 1
 currentcolor 4 1;9 1
 specifying 0 2
 current 20 6;18 5;21 5;23 5;26 5;0 4;22 4;24 4
 standard 4 2;9 2
 culturally 2 3;19 2
 stretches 17 1
-css 19 40;27 16;4 4;9 4;0 2;1 2;2 2;3 2;5 2;6 2;7 2;8 2;10 2;11 2;12 2;13 2;14 2;15 2;16 2;17 2;18 2;20 2;21 2;22 2;23 2;24 2;25 2;26 2
+css 19 40;27 16;4 4;9 4;0 2;5 2;6 2;7 2;8 2;2 2;10 2;11 2;12 2;13 2;1 2;15 2;16 2;17 2;18 2;3 2;20 2;21 2;22 2;23 2;24 2;25 2;26 2;14 2
 strike 5 1
 crosses 15 1
 strikethroughs 4 5;7 5;19 4
 cross 15 6;19 2
 string 1 6;17 2;19 2
 created 3 5;19 2
-style 19 64;6 31;11 26;27 16;8 7;12 7;0 2;1 2;2 2;3 2;4 2;5 2;7 2;9 2;10 2;13 2;14 2;15 2;16 2;17 2;18 2;20 2;21 2;22 2;23 2;24 2;25 2;26 2
+style 19 64;6 31;11 26;27 16;8 7;12 7;0 2;7 2;2 2;9 2;10 2;3 2;4 2;13 2;1 2;15 2;16 2;17 2;18 2;5 2;20 2;21 2;22 2;23 2;24 2;25 2;26 2;14 2
 create 0 5;19 2;13 1
 subject 21 1;22 1;23 1;24 1
 count 0 1;18 1;22 1;24 1;26 1
@@ -521,7 +517,7 @@ tags 2 1
 completely 21 1;22 1
 teal 4 1;9 1
 compatible 25 1
-text 19 110;8 37;12 31;15 28;9 27;5 26;6 26;10 26;11 26;13 26;4 22;7 21;14 21;17 9;23 4;24 4;21 3;22 3;16 2
+text 19 110;8 37;12 31;15 28;9 27;13 26;6 26;10 26;11 26;5 26;4 22;14 21;7 21;17 9;23 4;24 4;21 3;22 3;16 2
 commas 13 1
 text-decoration 8 21;19 9;15 5
 colors 4 1;9 1
@@ -544,7 +540,7 @@ chemical 17 1
 text-shadow 13 21;19 7
 characters 19 11;1 6;0 5;15 5;5 3;2 1
 text-transform 14 21;19 7
-character 19 58;14 3;0 2;1 2;2 2;3 2;4 2;5 2;6 2;7 2;8 2;9 2;10 2;11 2;12 2;13 2;15 2;16 2;17 2;18 2
+character 19 58;14 3;2 2;3 2;4 2;5 2;6 2;7 2;8 2;9 2;1 2;11 2;12 2;13 2;0 2;15 2;16 2;17 2;18 2;10 2
 text-underline-position 15 21;19 7
 change 27 10;21 5;22 5;23 5;24 5;14 4;25 3
 textdecoration 8 21;19 9;15 5
@@ -609,7 +605,7 @@ two 0 1;5 1;13 1;20 1;26 1
 bottom-padding 20 1
 type 5 5;19 2
 bottom-border 20 1
-typographic 19 10;13 3;0 1;2 1;3 1;18 1;20 1;21 1;22 1;23 1;24 1;26 1
+typographic 19 10;13 3;20 1;0 1;18 1;3 1;2 1;21 1;22 1;23 1;24 1;26 1
 bottom 20 2
 under 10 1;15 1
 both 12 6;19 2;25 2;10 1
@@ -626,18 +622,18 @@ blur-radius 13 3
 uppercase 14 11;19 4
 blur 13 3
 urls 17 1
-blue 4 4;9 4;0 1;1 1;2 1;3 1;5 1;6 1;7 1;8 1;10 1;11 1;12 1;13 1;14 1;15 1;16 1;17 1;18 1;19 1;20 1;21 1;22 1;23 1;24 1;25 1;26 1;27 1
+blue 4 4;9 4;14 1;3 1;0 1;5 1;6 1;7 1;8 1;2 1;10 1;11 1;12 1;13 1;1 1;15 1;16 1;17 1;18 1;19 1;20 1;21 1;22 1;23 1;24 1;25 1;26 1;27 1
 usage 10 2
 block 20 3;21 3;22 3;23 3;24 3;26 3
-use 15 6;19 6;3 5;11 5;20 3;21 3;22 3;23 3;24 3;26 3;0 2;17 2;18 2;1 1;2 1;5 1;6 1;7 1
+use 15 6;19 6;3 5;11 5;26 3;24 3;23 3;22 3;21 3;20 3;18 2;0 2;17 2;1 1;7 1;6 1;5 1;2 1
 black 4 1;9 1
 user 25 9;27 4
 between 0 6;18 5;19 4;25 2;17 1;21 1;22 1
 using 13 5;19 2;2 1;4 1;7 1;9 1;11 1
 beneath 5 1
-value 21 3;22 3;25 3;0 2;4 2;9 2;20 2;26 2;7 1;23 1;24 1
+value 21 3;25 3;22 3;9 2;20 2;4 2;0 2;26 2;23 1;24 1;7 1
 below 15 6;19 2;10 1;13 1;23 1;24 1
-values 27 10;13 9;8 4;12 4;15 4;16 4;17 4;0 3;1 3;2 3;3 3;4 3;5 3;6 3;7 3;9 3;10 3;11 3;14 3;18 3;20 3;21 3;22 3;23 3;24 3;25 3;26 3
+values 27 10;13 9;8 4;12 4;15 4;16 4;17 4;14 3;2 3;9 3;10 3;11 3;4 3;1 3;3 3;5 3;6 3;7 3;18 3;20 3;21 3;22 3;23 3;24 3;25 3;26 3;0 3
 baseline 15 5;19 2
 variant 14 2
 based 14 1
@@ -679,7 +675,7 @@ when 16 5;17 5;19 4;1 3;21 2;22 2;23 2;24 2;25 1
 allow 25 3
 whether 25 5;27 2;17 1
 allinone 19 4;8 3;12 3
-which 5 5;11 5;19 4;23 3;24 3;20 2;21 2;22 2;26 2;0 1;15 1;18 1;25 1
+which 11 5;5 5;19 4;24 3;23 3;20 2;26 2;21 2;22 2;18 1;15 1;25 1;0 1
 all-in-one 19 4;8 3;12 3
 whichever 20 2;21 2;22 2;23 2;24 2;26 2
 all 8 9;19 6;12 3;17 2
@@ -691,7 +687,7 @@ whitespace 16 25;19 11;3 5;18 3
 adjust 15 1
 wider 13 1
 adjacent 0 1
-width 22 46;27 41;24 38;26 37;3 5;18 3;0 2;1 2;16 2;19 2;20 2;21 2;23 2;25 2;14 1
+width 22 46;27 41;24 38;26 37;3 5;18 3;19 2;1 2;21 2;16 2;23 2;0 2;25 2;20 2;14 1
 adds 25 1
 will 23 3;24 3;21 2;22 2
 additional 18 5;19 2

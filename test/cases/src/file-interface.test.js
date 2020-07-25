@@ -17,11 +17,13 @@ fileInterface.readSiteWords('../test/fixtures/input/style-ternary', ternWords);
 
 //@using
 var docCount = ternWords.documentRefs.length;
+var hostCount = ternWords.listOfHosts.size;
+var pathCount = ternWords.listOfPaths.size;
 var nodeCount = ternWords.countNodes();
 var wordCount = ternWords.countWords();
 
 // @testing counts
-									;; docCount == 28 && nodeCount == 2409 && wordCount == 588
+									;; docCount == 28 && hostCount == 1 && pathCount == 3 && nodeCount == 2409 && wordCount == 588
 
 
 //@using
@@ -79,7 +81,6 @@ for (let i=0; i < words.length; i++) {
 	var weightRefs = ternWords.getExactMatch(words[i]);
 	wordList += `${words[i]} ${weightRefs[0].weight};`;
 }
-//console.log(wordList);
 
 // @testing prefixMatchesWeighted
 var prefix = 'ma';   var maxWords= 10;		;; wordList == 'max 25;max-height 25;max-width 25;maximum 13;marks 10;mark 8;make 3;made 1;manuscript 1;marked 1;'
@@ -103,8 +104,8 @@ for (let i=0; i < weightRefs.length; i++) {
 }
 
 // @testing getDocumentRef
-var word = 'text';  		;; titleList == 'character;text-decoration;text-emphasis;text-underline-position;text-emphasis-color;text-shadow;text-decoration-style;text-emphasis-position;text-emphasis-style;text-decoration-line;text-decoration-color;text-transform;text-decoration-thickness;word-break;min-height;min-width;max-height;max-width;white-space;'
-var word = 'character';  	;; titleList == 'character;text-transform;quotes;tab-size;text-decoration-color;text-decoration-line;text-decoration-style;text-decoration-thickness;text-decoration;text-emphasis-color;overflow-wrap;text-emphasis-style;text-emphasis;text-shadow;letter-spacing;text-underline-position;white-space;word-break;word-spacing;text-emphasis-position;'
+var word = 'text';  		;; titleList == 'character;text-decoration;text-emphasis;text-underline-position;text-emphasis-color;text-decoration-line;text-decoration-style;text-emphasis-position;text-emphasis-style;text-shadow;text-decoration-color;text-decoration-thickness;text-transform;word-break;min-height;min-width;max-height;max-width;white-space;'
+var word = 'character';  	;; titleList == 'character;text-transform;letter-spacing;overflow-wrap;quotes;tab-size;text-decoration-color;text-decoration-line;text-decoration-style;text-decoration-thickness;text-decoration;text-emphasis-color;text-emphasis-position;text-emphasis-style;text-emphasis;text-shadow;text-underline-position;white-space;word-break;word-spacing;'
 var word = 'strike';  		;; titleList == 'text-decoration-line;'
 var	word = 'decoration';	;; titleList == 'character;text-decoration;text-decoration-color;text-decoration-line;text-decoration-style;text-decoration-thickness;text-underline-position;'
 	
@@ -116,11 +117,10 @@ for (let i=0; i < documentIndexes.length; i++) {
 	var documentRef = ternWords.getDocumentRef(documentIndexes[i]);
 	titleList += `${documentRef.title};`;
 }
-//console.log(titleList);
 
 // @testing multiWordSearch
 var max = 10; var multiWords = ['min', 'max'];  					;; titleList ==  'sizing;resize;max-height;max-width;min-height;min-width;'
-var max = 10; var multiWords = ['decoration', 'character'];  		;; titleList ==  'character;text-decoration;text-decoration-color;text-decoration-line;text-decoration-style;text-decoration-thickness;text-underline-position;text-transform;quotes;tab-size;'
-var max = 10; var multiWords = ['decoration', 'text'];  			;; titleList ==  'character;text-decoration;text-decoration-line;text-decoration-style;text-decoration-color;text-decoration-thickness;text-underline-position;text-emphasis;text-emphasis-color;text-shadow;'
+var max = 10; var multiWords = ['decoration', 'character'];  		;; titleList ==  'character;text-decoration;text-decoration-color;text-decoration-line;text-decoration-style;text-decoration-thickness;text-underline-position;text-transform;letter-spacing;overflow-wrap;'
+var max = 10; var multiWords = ['decoration', 'text'];  			;; titleList ==  'character;text-decoration;text-decoration-line;text-decoration-style;text-decoration-color;text-decoration-thickness;text-underline-position;text-emphasis;text-emphasis-color;text-emphasis-position;'
 var max = 10; var multiWords = ['decoration', 'text', 'min', 'max']; ;; titleList == 'character;text-decoration;text-decoration-line;text-decoration-style;text-decoration-color;text-decoration-thickness;text-underline-position;max-height;max-width;sizing;'
 		
