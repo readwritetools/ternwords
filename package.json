@@ -2,15 +2,27 @@
   "name": "ternwords",
   "version": "1.0.5",
   "description": "TERNWORDS is a ternary trie of words created by SITEWORDS",
-  "private": true,
-  "main": "./dist/tern-words.class.js",
-  "author": "Joe Honton",
-  "license": "CC-BY-NC-ND 4.0",
-  "scripts": {},
-  "dependencies": {
-    "joezone": "^1.1.36"
+  "author": "Read Write Tools",
+  "license": "MIT",
+  "module": "dist/tern-words.class.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/readwritetools/ternwords.git"
   },
+  "scripts": {
+    "bump-version": "npm version patch && git push && git push --tags"
+  },
+  "keywords": [
+    "ternary trie",
+    "rwsearch",
+    "readwritetools"
+  ],
+  "bugs": {
+    "url": "https://github.com/readwritetools/ternwords/issues"
+  },
+  "homepage": "https://hub.readwritetools.com/enterprise/site-search.blue",
   "files": [
     "dist"
-  ]
+  ],
+  "dependencies": {}
 }

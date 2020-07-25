@@ -24,7 +24,7 @@ run {
 	sh npm version patch
 	sh git push origin master
 	sh git push origin master --tags
-//	sh git push github master
-//	sh git push github master --tags
+	sh git push github master
+	sh git push github master --tags
 	onerror continue
 }
