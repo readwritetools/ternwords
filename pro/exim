@@ -16,7 +16,7 @@ template {
 
 // ---------- rewrite export/import (src) ---------- 
 recurse {
-	source    '../module'
+	source    '../esmodule'
 	dest      '../commonjs'
 	overwrite older
 	exec      eximjs
@@ -25,6 +25,6 @@ recurse {
 // ---------- look for cruft in dbg compared to original src ---------- 
 compare {
 	source    '../commonjs'
-	dest      '../module'
+	dest      '../esmodule'
 }
 

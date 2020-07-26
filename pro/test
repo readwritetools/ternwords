@@ -18,8 +18,8 @@ template {
 
 // ---------- rewrite export/import (test) ---------- 
 recurse {
-	source    '../test/cases/src'
-	dest      '../test/cases/dbg'
+	source    '../test/cases/esmodule'
+	dest      '../test/cases/commonjs'
 	include   '*.test.js'
 	overwrite older
 	exec      eximjs
@@ -27,7 +27,13 @@ recurse {
 
 // ---------- run test cases ---------- 
 recurse {
-	source    '../test/cases/dbg'
+	source    '../test/cases/esmodule'
+	include   '*.test.js'
+	exclude   'interactive.test.js'
+	exec      bequiesce
+}
+recurse {
+	source    '../test/cases/commonjs'
 	include   '*.test.js'
 	exclude   'interactive.test.js'
 	exec      bequiesce
@@ -36,6 +42,6 @@ recurse {
 
 // ---------- look for cruft in dbg compared to original src ---------- 
 compare {
-	source    '../test/cases/dbg'
-	dest      '../test/cases/src'
+	source    '../test/cases/commonjs'
+	dest      '../test/cases/esmodule'
 }

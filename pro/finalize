@@ -19,15 +19,15 @@ template {
 
 // ---------- remove comments and whitespace ---------- 
 recurse {
-	source    '../module'
-	dest      '../module-min'
+	source    '../esmodule'
+	dest      '../esm'
 	include   '*.js'
 	overwrite older
 	exec      minify-js
 }
 recurse {
 	source    '../commonjs'
-	dest      '../commonjs-min'
+	dest      '../cjs'
 	include   '*.js'
 	overwrite older
 	exec      minify-js
@@ -35,16 +35,16 @@ recurse {
 
 // ---------- add copyright ---------- 
 recurse {
-	source    '../module-min'
-	dest      '../module-min'
+	source    '../esm'
+	dest      '../esm'
 	include   '*.js'
 	overwrite always
 	exec      copyright-js
 	progress  none
 }
 recurse {
-	source    '../commonjs-min'
-	dest      '../commonjs-min'
+	source    '../cjs'
+	dest      '../cjs'
 	include   '*.js'
 	overwrite always
 	exec      copyright-js
@@ -53,11 +53,11 @@ recurse {
 
 // ---------- look for cruft in final dist compared to original src ---------- 
 compare {
-	source    '../module-min'
-	dest      '../module'
+	source    '../esm'
+	dest      '../esmodule'
 }
 compare {
-	source    '../commonjs-min'
+	source    '../cjs'
 	dest      '../commonjs'
 }
 
