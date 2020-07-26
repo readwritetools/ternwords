@@ -21,8 +21,10 @@
   },
   "homepage": "https://hub.readwritetools.com/enterprise/site-search.blue",
   "files": [
-    "module-min",
-    "commonjs-min"
+    "esm",
+    "cjs"
   ],
-  "dependencies": {}
+  "dependencies": {
+    "joezone": "^1.1.36"
+  }
 }

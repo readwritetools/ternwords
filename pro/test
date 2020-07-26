@@ -27,18 +27,11 @@ recurse {
 
 // ---------- run test cases ---------- 
 recurse {
-	source    '../test/cases/esmodule'
-	include   '*.test.js'
-	exclude   'interactive.test.js'
-	exec      bequiesce
-}
-recurse {
 	source    '../test/cases/commonjs'
 	include   '*.test.js'
 	exclude   'interactive.test.js'
 	exec      bequiesce
 }
-
 
 // ---------- look for cruft in dbg compared to original src ---------- 
 compare {

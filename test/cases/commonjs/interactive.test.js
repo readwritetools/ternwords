@@ -8,8 +8,8 @@
 
 // Suitable for running with node inspector
 
-var FileInterface = require('../../../dbg/file-interface.class.js');
-var TernWords = require('../../../dbg/tern-words.class.js');
+var FileInterface = require('../../../commonjs/file-interface.class.js');
+var TernWords = require('../../../commonjs/tern-words.class.js');
 
 var fileInterface = new FileInterface();
 var ternWords = new TernWords();

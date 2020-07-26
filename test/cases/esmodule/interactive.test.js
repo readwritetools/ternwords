@@ -8,8 +8,8 @@
 
 // Suitable for running with node inspector
 
-import FileInterface from '../../../dbg/file-interface.class.js';
-import TernWords from '../../../dbg/tern-words.class.js';
+import FileInterface from '../../../commonjs/file-interface.class.js';
+import TernWords from '../../../commonjs/tern-words.class.js';
 
 var fileInterface = new FileInterface();
 var ternWords = new TernWords();

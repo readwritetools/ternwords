@@ -7,8 +7,8 @@
 //=============================================================================
 
 // @common
-var TextInterface = require('../../../dbg/text-interface.class.js');
-var TernWords = require('../../../dbg/tern-words.class.js');
+var TextInterface = require('../../../commonjs/text-interface.class.js');
+var TernWords = require('../../../commonjs/tern-words.class.js');
 var fs = require('fs');
 
 var textBlob = fs.readFileSync('../test/fixtures/input/style-ternary', 'UTF-8');

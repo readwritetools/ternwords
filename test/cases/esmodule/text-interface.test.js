@@ -7,8 +7,8 @@
 //=============================================================================
 
 // @common
-import TextInterface from '../../../dbg/text-interface.class.js';
-import TernWords from '../../../dbg/tern-words.class.js';
+import TextInterface from '../../../commonjs/text-interface.class.js';
+import TernWords from '../../../commonjs/tern-words.class.js';
 import fs from 'fs';
 
 var textBlob = fs.readFileSync('../test/fixtures/input/style-ternary', 'UTF-8');
