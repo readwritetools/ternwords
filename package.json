@@ -4,7 +4,6 @@
   "description": "TERNWORDS is a ternary trie of words created by SITEWORDS",
   "author": "Read Write Tools",
   "license": "MIT",
-  "module": "dist/tern-words.class.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/readwritetools/ternwords.git"
@@ -22,7 +21,8 @@
   },
   "homepage": "https://hub.readwritetools.com/enterprise/site-search.blue",
   "files": [
-    "dist"
+    "module-min",
+    "commonjs-min"
   ],
   "dependencies": {}
 }

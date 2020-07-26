@@ -19,8 +19,15 @@ template {
 
 // ---------- remove comments and whitespace ---------- 
 recurse {
-	source    '../dbg'
-	dest      '../dist'
+	source    '../module'
+	dest      '../module-min'
+	include   '*.js'
+	overwrite older
+	exec      minify-js
+}
+recurse {
+	source    '../commonjs'
+	dest      '../commonjs-min'
 	include   '*.js'
 	overwrite older
 	exec      minify-js
@@ -28,8 +35,16 @@ recurse {
 
 // ---------- add copyright ---------- 
 recurse {
-	source    '../dist'
-	dest      '../dist'
+	source    '../module-min'
+	dest      '../module-min'
+	include   '*.js'
+	overwrite always
+	exec      copyright-js
+	progress  none
+}
+recurse {
+	source    '../commonjs-min'
+	dest      '../commonjs-min'
 	include   '*.js'
 	overwrite always
 	exec      copyright-js
@@ -38,8 +53,12 @@ recurse {
 
 // ---------- look for cruft in final dist compared to original src ---------- 
 compare {
-	source    '../dist'
-	dest      '../src'
+	source    '../module-min'
+	dest      '../module'
+}
+compare {
+	source    '../commonjs-min'
+	dest      '../commonjs'
 }
 
 // ---------- commit any outstanding changes ---------- 

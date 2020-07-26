@@ -12,5 +12,6 @@
 
 // ---------- install node module dependencies ---------- 
 run {
+	sh npm install joezone
 	sh git pull origin
 }

@@ -9,15 +9,14 @@
 //
 //=============================================================================
 
-import expect			from './utils/expect.js';
-import terminal			from './utils/terminal.js';
-import TextInterface	from './text-interface.class.js'
-import DocumentRef		from './document-ref.class.js';
-//? import WeightRef		from './weight-ref.class.js';
-import {Pfile}			from 'joezone';
-import {TextReader}		from 'joezone';
+var expect = require('./utils/expect.js');
+var terminal = require('./utils/terminal.js');
+var TextInterface = require('./text-interface.class.js');
+var DocumentRef = require('./document-ref.class.js');
+var Pfile = require('joezone').Pfile;
+var TextReader = require('joezone').TextReader;
 
-export default class FileInterface extends TextInterface {
+module.exports = class FileInterface extends TextInterface {
 	
     constructor() {
     	super();
