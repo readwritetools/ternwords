@@ -25,6 +25,6 @@
     "cjs"
   ],
   "dependencies": {
-    "joezone": "^1.1.36"
+    "joezone": "^1.1.37"
   }
 }

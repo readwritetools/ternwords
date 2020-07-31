@@ -59,8 +59,9 @@ export default class TextInterface {
 	}
 	
 	// Handle these document ref lines:
+	// !ho host definition
+	// !pa path definition
 	// !di documentIndex
-	// !hp hostPath
 	// !ti title
 	// !de description
 	// !ky keywords
@@ -107,7 +108,12 @@ export default class TextInterface {
 				this.currentDocumentRef.document = document;					// term-mark.blue
 				return;
 				
-			// title	
+			// lastmod
+			case 'dt':
+				this.currentDocumentRef.lastmod = value;
+				return;
+				
+				// title	
 			case 'ti':
 				this.currentDocumentRef.title = value;
 				return;

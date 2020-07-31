@@ -25,6 +25,7 @@ module.exports = class DocumentRef {
 		this.title = '';
 		this.description = '';
 		this.keywords = '';
+		this.lastmod = '';						// YYYY-MM-DD
 		
 		Object.seal(this);
     }
@@ -37,6 +38,7 @@ module.exports = class DocumentRef {
 		tw.putline(`!ti ${this.title}`);
 		tw.putline(`!de ${this.description}`);
 		tw.putline(`!ky ${this.keywords}`);
+		tw.putline(`!dt ${this.lastmod}`);
 	}    
 	
 	get host() {

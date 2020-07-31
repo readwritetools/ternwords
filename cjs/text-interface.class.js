@@ -32,13 +32,16 @@ module.exports = class TextInterface {
           case 'di':
             var a = parseInt(n);
             this.currentDocumentRef = new DocumentRef(r, a), r.documentRefs.push(this.currentDocumentRef);
-            var l = r.documentRefs.length - 1;
-            return void (l != a && terminal.abnormal(`DocumentIndex on line number ${e} expected to be ${l}, not ${a}`));
+            var d = r.documentRefs.length - 1;
+            return void (d != a && terminal.abnormal(`DocumentIndex on line number ${e} expected to be ${d}, not ${a}`));
 
           case 'ur':
-            var [i, c, d] = n.split(' ', 3);
+            var [i, c, l] = n.split(' ', 3);
             return this.currentDocumentRef.hostIndex = parseInt(i), this.currentDocumentRef.pathIndex = parseInt(c), 
-            void (this.currentDocumentRef.document = d);
+            void (this.currentDocumentRef.document = l);
+
+          case 'dt':
+            return void (this.currentDocumentRef.lastmod = n);
 
           case 'ti':
             return void (this.currentDocumentRef.title = n);

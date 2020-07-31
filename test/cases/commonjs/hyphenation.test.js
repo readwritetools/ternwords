@@ -20,15 +20,15 @@ var weightRefs = ternWords.getExactMatch(word);
 var sWeights = weightRefs.join(';');
 
 //@testing values
-var word = 'text'; 								;; sWeights == '19 110;8 37;12 31;15 28;9 27;5 26;6 26;10 26;11 26;13 26;4 22;7 21;14 21;17 9;23 4;24 4;21 3;22 3;16 2'
-var word = 'text-decoration'; 					;; sWeights == '8 21;19 9;15 5'
-var word = 'text-decoration-color'; 			;; sWeights == '4 21;19 7'
-var word = 'text-decoration-line';				;; sWeights == '5 21;19 9;8 5'
-var word = 'text-decoration-style';				;; sWeights == '6 21;19 9;8 5'
-var word = 'textdecoration'; 					;; sWeights == '8 21;19 9;15 5'
-var word = 'textdecorationcolor'; 				;; sWeights == '4 21;19 7'
-var word = 'textdecorationline';				;; sWeights == '5 21;19 9;8 5'
-var word = 'textdecorationstyle';				;; sWeights == '6 21;19 9;8 5'
+var word = 'text'; 								;; sWeights == '19 110;8 38;12 32;15 29;9 28;5 27;6 27;10 27;11 27;13 27;4 23;7 22;14 22;17 18;23 4;24 4;21 3;22 3;16 2'
+var word = 'text-decoration'; 					;; sWeights == '8 22;19 9;15 5'
+var word = 'text-decoration-color'; 			;; sWeights == '4 22;19 7'
+var word = 'text-decoration-line';				;; sWeights == '5 22;19 9;8 5'
+var word = 'text-decoration-style';				;; sWeights == '6 22;19 9;8 5'
+var word = 'textdecoration'; 					;; sWeights == '8 22;19 9;15 5'
+var word = 'textdecorationcolor'; 				;; sWeights == '4 22;19 7'
+var word = 'textdecorationline';				;; sWeights == '5 22;19 9;8 5'
+var word = 'textdecorationstyle';				;; sWeights == '6 22;19 9;8 5'
 
 
 //@using
@@ -71,6 +71,6 @@ var wordList = words.join(',');
 var prefix = 'text';   						var maxWords= 25;		;; wordList == 'text,text-decoration,text-decoration-color,text-decoration-line,text-decoration-style,text-decoration-thickness,text-emphasis,text-emphasis-color,text-emphasis-position,text-emphasis-style,text-shadow,text-transform,text-underline-position'
 var prefix = 'offset';  					var maxWords= 5;		;; wordList == 'offset,offset-x,offset-y'
 var prefix = 'max';  						var maxWords= 6;		;; wordList == 'max,max-height,max-width,maximum'
-var prefix = 'pre';  						var maxWords= 7;		;; wordList == 'prevent,pre,present,pre-wrap,pre-line'
+var prefix = 'pre';  						var maxWords= 7;		;; wordList == 'present,prevent,pre,pre-wrap,pre-line'
 
 	
