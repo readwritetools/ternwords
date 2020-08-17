@@ -1,6 +1,6 @@
 {
   "name": "ternwords",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "TERNWORDS is a ternary trie of words created by SITEWORDS",
   "author": "Read Write Tools",
   "license": "MIT",
