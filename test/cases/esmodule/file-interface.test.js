@@ -23,7 +23,7 @@ var nodeCount = ternWords.countNodes();
 var wordCount = ternWords.countWords();
 
 // @testing counts
-									;; docCount == 28 && hostCount == 1 && pathCount == 3 && nodeCount == 2416 && wordCount == 590
+									;; docCount == 28 && hostCount == 1 && pathCount == 3 && nodeCount == 2421 && wordCount == 588
 
 
 //@using
@@ -87,7 +87,7 @@ var prefix = 'ma';   var maxWords= 10;		;; wordList == 'max 26;max-height 26;max
 var prefix = 'ma';   var maxWords= 5;		;; wordList == 'max 26;max-height 26;max-width 26;maximum 19;make 12;'
 var prefix = 're';   var maxWords= 15;		;; wordList == 'resize 22;readable 12;really 12;resized 8;readability 5;red 3;relative 3;reduced 1;rem 1;remove 1;required 1;resizable 1;resizing 1;'
 var prefix = 're';   var maxWords= 5;		;; wordList == 'resize 22;readable 12;really 12;resized 8;readability 5;'
-var prefix = 'st';   var maxWords= 6;		;; wordList == 'style 64;string 6;strikethroughs 5;standard 2;stretches 1;strike 1;'
+var prefix = 'st';   var maxWords= 6;		;; wordList == 'style 62;string 6;strikethroughs 5;standard 2;stretches 1;strike 1;'
 var prefix = 'str';  var maxWords= 6;		;; wordList == 'string 6;strikethroughs 5;stretches 1;strike 1;'
 var prefix = 'stri';  var maxWords= 6;		;; wordList == 'string 6;strikethroughs 5;strike 1;'
 var prefix = 'strik';  var maxWords= 6;		;; wordList == 'strikethroughs 5;strike 1;'

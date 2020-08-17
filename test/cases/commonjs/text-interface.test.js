@@ -25,7 +25,7 @@ var nodeCount = ternWords.countNodes();
 var wordCount = ternWords.countWords();
 
 // @testing counts
-									;; docCount == 28 && hostCount == 1 && pathCount == 3 && nodeCount == 2416 && wordCount == 590
+									;; docCount == 28 && hostCount == 1 && pathCount == 3 && nodeCount == 2421 && wordCount == 588
 
 
 //@using

@@ -64,7 +64,7 @@ export default class TextInterface {
     }
     processWordRef(e, t, r) {
         if (expect(e, 'Number'), expect(t, 'String'), expect(r, 'TernWords'), '' != t) {
-            var s = t.indexOf(' ');
+            var s = t.indexOf('|');
             if (-1 != s) {
                 var n = t.substr(0, s), i = t.substr(s + 1).split(';'), o = new Array();
                 for (let e = 0; e < i.length; e++) {

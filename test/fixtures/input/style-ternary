@@ -43,7 +43,7 @@
 !ur 0 0 text-decoration-style.blue
 !ti text-decoration-style - Decorative line style | BLUEPHRASE
 !de [css · character] Set the style for decorative lines used with the element's text.
-!ky css,style,character,text-decoration-style
+!ky css,character,text-decoration-style
 !dt 2020-07-29
 !di 7
 !ur 0 0 text-decoration-thickness.blue
@@ -73,7 +73,7 @@
 !ur 0 0 text-emphasis-style.blue
 !ti text-emphasis-style - Emphasis mark style | BLUEPHRASE
 !de [css · character] This property specifies which symbol to use for East Asian text emphasis marks.
-!ky css,style,character,text-emphasis-style
+!ky css,character,text-emphasis-style
 !dt 2020-07-29
 !di 12
 !ur 0 0 text-emphasis.blue
@@ -121,7 +121,7 @@
 !ur 0 1 character.blue
 !ti character - Typographic treatment | BLUEPHRASE
 !de [css · character] These properties set the typographic treatment used with individual characters.
-!ky letter-spacing,quotes,tab-size,text-decoration,text-decoration-line,text-decoration-color,text-decoration-style,text-decoration-thickness,text-emphasis,text-emphasis-style,text-emphasis-color,text-emphasis-position,text-shadow,text-transform,text-underline-position,white-space,word-break,word-spacing,word-wrap,css,style,character
+!ky letter-spacing,quotes,tab-size,text-decoration,text-decoration-line,text-decoration-color,text-decoration-style,text-decoration-thickness,text-emphasis,text-emphasis-style,text-emphasis-color,text-emphasis-position,text-shadow,text-transform,text-underline-position,white-space,word-break,word-spacing,word-wrap,css,character
 !dt 2020-07-29
 !di 20
 !ur 0 2 height.blue
@@ -169,595 +169,593 @@
 !ur 0 1 sizing.blue
 !ti sizing - Width and height | BLUEPHRASE
 !de [css · sizing] Specify the initial values for width and height, and the minimum and maximum values for expandable elements.
-!ky width,min-width,max-width,height,min-height,max-height,resize,css,style,sizing
+!ky min-width,max-width,min-height,max-height,resize,css,style,sizing
 !dt 2020-07-29
-lowercase 14 20;19 4
-lower 25 1
-lowhigh 2 1
-low-high 2 1
-made 25 1
-low 2 1
-make 15 12;19 2;14 1
-long 1 6;19 2;17 1;21 1;22 1
-manuscript 16 1
-location 10 2
-mark 9 12;10 12;11 12;19 8;2 5
-listed 4 1;9 1
-marked 2 1
-list 11 1
-marks 10 10;9 6;11 6;19 6;2 4
-linethrough 5 1
-maroon 4 1;9 1
-lines 19 6;4 5;6 5;7 5
-max 21 26;22 26;27 14;25 2
-lineheight 20 2;21 2;23 2
-max-height 21 26;27 7;25 1
-line-through 5 1
-max-width 22 26;27 7;25 1
-line-height 20 2;21 2;23 2
-maxheight 21 26;27 7;25 1
-line 5 43;19 19;4 12;6 12;7 12;16 11;8 5;20 4;21 4;23 4;17 3;1 2;15 1
-maximum 21 19;22 19;27 13;20 1;23 1;24 1;26 1
-limited 17 1
-maxwidth 22 26;27 7;25 1
-lime 4 1;9 1
-meaningful 25 1
-like 17 1
-meanings 16 1
-lighting 13 12;19 2
-measure 18 3;0 2;22 2;24 2;26 2
-light 13 7;19 2
-middle 17 2
-lh 20 1;21 1;23 1
-millimeter 0 2;18 2;20 2;21 2;22 2;23 2;24 2;26 2
-letterspacing 0 22;19 7
-min 23 22;24 22;27 14;25 2
-letters 14 6;19 2;0 1;15 1;20 1;21 1;23 1
-min-height 23 22;27 7;25 1
-letter-spacing 0 22;19 7
-min-width 24 22;27 7;25 1
-letter 0 34;19 11;15 5;14 3
-minheight 23 22;27 7;25 1
-less 21 1;22 1
-minimum 23 19;24 19;27 13;20 1;21 1;22 1;26 1
-length 3 1
-minwidth 24 22;27 7;25 1
-leftpadding 26 1
-mm 0 1;18 1;20 1;21 1;22 1;23 1;24 1;26 1
-leftborder 26 1
-modes 15 2
-left-padding 26 1
-more 15 12;13 2;19 2;4 1;9 1;21 1;22 1
-left-border 26 1
-must 25 1
-left 10 2;15 2;26 2;13 1;23 1;24 1
-names 4 1;9 1
-latin 17 1
-navy 4 1;9 1
-larger 13 1;20 1;21 1;22 1;23 1;24 1;26 1
-necessary 17 2;1 1
-languages 10 1
-need 17 1
-lang 14 5
-needed 23 1;24 1
-korean 17 1
-needing 17 1
-keywords 1 1;5 1;6 1;11 1;16 1;25 1
-negative 0 1;13 1
-keyword 17 3;10 2;11 2;16 2;4 1;7 1;9 1;12 1;15 1
-new 16 8;1 2
-keystroke 3 5;19 2
-newlines 16 11;19 2
-keyboard 2 2
-next 1 2;16 2;17 1
-keepall 17 1
-nominal 20 1;21 1;23 1
-keep-all 17 1
-none 5 1;25 1
-keep 16 13;19 2;15 1;17 1
-normal 15 1;16 1;17 1;21 1;22 1
-katakana 14 1
-nowrap 16 1
-kanji 10 2;14 1
-number 3 1
-kana 14 1
-occupy 14 1
-japanese 10 2;14 2;17 1
-offset 13 4
-item 4 1;9 1
-offset-x 13 2
-interpretations 20 1;26 1
-offset-y 13 2
-integer 3 1
-offsetx 13 2
-inline 20 3;21 3;22 3;23 3;24 3;26 3
-offsety 13 2
-initial 20 17;26 17;27 13
-oh 3 12;19 2
-individual 19 7;0 5;8 1
-olive 4 1;9 1
-independent 0 1;18 1;20 1;21 1;22 1;23 1;24 1;26 1
-on 15 2;14 1;17 1
-increased 0 1
-one 8 12;12 12;19 4;1 1;4 1;5 1;6 1;9 1;13 1;15 1;17 1;25 1
-inch 0 2;18 2;20 2;21 2;22 2;23 2;24 2;26 2
-only 4 1;9 1;20 1;26 1
-improve 0 5;19 2
-opacity 4 1;9 1
-ideograph 0 2;18 2;22 2;24 2;26 2
-opaque 4 1;9 1
-ic 0 1;18 1;22 1;24 1;26 1
-open 11 5
-htmls 2 5;19 2
-opposite 13 1
-html 14 5;20 2;21 2;23 2;0 1;2 1;18 1;22 1;24 1;26 1
-optional 13 1
-hsla 4 5;9 5
-order 8 1;12 1
-hsl 4 4;9 4
-over 15 6;19 2;10 1
-how 16 6;19 2
-overflow 1 39;19 9;16 7;17 1;21 1;22 1;23 1;24 1;25 1
-horizontally 10 1;25 1
-overflow-wrap 1 22;19 5
-horizontal 10 2;22 1;24 1;25 1
-overflow-x 22 1;24 1
-honored 16 4
-overflow-y 21 1;23 1
-honor 16 2
-overflowed 21 1;22 1
-hiragana 14 1
-overflowing 17 5;19 2;23 1;24 1
-high 2 1
-overflowwrap 1 22;19 5
-hidden 21 1;22 1;23 1;24 1;25 1
-overflowx 22 1;24 1
-hex 4 2;9 2
-overflowy 21 1;23 1
-height 21 61;23 53;20 52;27 50;22 2;24 2;25 2;26 2
-overline 5 1
-hanzi 10 2
-overlines 4 5;7 5;19 4
-handled 16 5;19 2
-padding 20 2;26 2
-guillemet 2 1
-pair 2 1;11 1
-grow 25 1
-pairs 11 2
-group 13 1
-parent 20 1;21 1;22 1;23 1;24 1;26 1
-green 4 3;9 3
-pc 0 1;18 1;20 1;21 1;22 1;23 1;24 1;26 1
-gray 4 1;9 1
-percent 20 1;21 1;22 1;23 1;24 1;26 1
-glyphs 2 5;19 2
-percentage 18 2;20 2;21 2;22 2;23 2;24 2;26 2
-glyph 11 2;0 1;18 1;20 1;21 1;22 1;23 1;24 1;26 1
-phrase 0 1;1 1;2 1;3 1;4 1;5 1;6 1;7 1;8 1;9 1;10 1;11 1;12 1;13 1;14 1;15 1;16 1;17 1;18 1;19 1;20 1;21 1;22 1;23 1;24 1;25 1;26 1;27 1
-fully 1 2;4 2;9 2
-pica 0 1;18 1;20 1;21 1;22 1;23 1;24 1;26 1
-fullwidth 14 1
-pixels 0 1;18 1;20 1;21 1;22 1;23 1;24 1;26 1
-fullsizekana 14 1
-place 10 4;5 2
-fullsize 14 1
-plus 20 2;26 2
-full-width 14 1
-point 0 1;18 1;20 1;21 1;22 1;23 1;24 1;26 1
-full-size-kana 14 1
-position 10 40;15 24;19 18
-full-size 14 1
-positive 0 1;13 1
-full 14 4;23 2;24 2
-possible 16 1
-fuchsia 4 1;9 1
-pre 16 4
-fromfont 7 1
-pre-line 16 1
-from-font 7 1
-pre-wrap 16 2
-fourth 4 1;9 1
-preline 16 1
-four 13 2
-present 17 12;19 2
-formulas 4 2;9 2;17 1
-prevent 1 12;17 5;19 4
-formula 4 2;9 2
-prewrap 16 2
-form 14 1
-produce 16 1
-forces 15 2
-properties 19 9;12 6;8 5
-force 17 12;14 6;19 6;15 5
-property 19 16;12 9;13 9;3 8;8 8;9 8;10 8;11 8;15 8;17 5;25 5;20 4;21 4;22 4;23 4;24 4;26 4;0 3;1 3;2 3;4 3;5 3;6 3;7 3;14 3;16 3;18 3
-fontsize 0 2;18 2;20 2;21 2;22 2;23 2;24 2;26 2
-provide 2 1
-fonts 18 3;0 2;20 2;21 2;22 2;23 2;24 2;26 2;15 1
-providing 11 1
-fontrelative 0 1;18 1;20 1;21 1;22 1;23 1;24 1;26 1
-pt 0 1;18 1;20 1;21 1;22 1;23 1;24 1;26 1
-font-size 0 2;18 2;20 2;21 2;22 2;23 2;24 2;26 2
-purple 4 1;9 1
-font-relative 0 1;18 1;20 1;21 1;22 1;23 1;24 1;26 1
-px 0 1;7 1;18 1;20 1;21 1;22 1;23 1;24 1;26 1
-font 20 6;21 6;23 6;0 5;18 5;22 5;24 5;26 5;7 2
-quarter 0 1;18 1;20 1;21 1;22 1;23 1;24 1;26 1
-flowing 17 1
-quotation 2 6;19 2
-fixed 0 1;18 1;20 1;21 1;22 1;23 1;24 1;26 1
-quotation-mark 2 5;19 2
-fit 1 2;16 2;21 2;22 2
-quotationmark 2 5;19 2
-first 4 1;9 1;13 1;14 1
-quotations 2 13;19 2
-fine 0 5;19 2
-quotes 2 28;19 7
-filled 11 5
-radius 13 3
-fill 23 1;24 1
-readability 0 5;19 2
-file 7 1
-readable 15 12;19 2
-f00 4 1;9 1
-really 16 12;19 2
-extra 21 1;22 1;23 1;24 1
-red 4 3;9 3
-expects 13 1
-reduced 0 1
-expanded 21 3;22 3
-relative 20 3;21 3;23 3;0 2;18 2;22 2;24 2;26 2
-expandable 27 5
-rem 0 1;18 1;20 1;21 1;22 1;23 1;24 1;26 1
-expand 0 12;19 2;21 1;22 1
-remove 25 1
-examples 2 4;0 3;1 3;3 3;4 3;5 3;6 3;7 3;8 3;9 3;10 3;11 3;12 3;13 3;14 3;15 3;16 3;17 3;18 3;20 3;21 3;22 3;23 3;24 3;25 3;26 3
-required 13 1;21 1;22 1
-example 2 2;11 2
-resizable 25 1
-ex 20 1;21 1;23 1
-resize 25 22;27 7
-everything 21 1;22 1
-resized 25 8;27 2;23 1;24 1
-every 14 2
-resizing 25 1
-equivalent 14 2;3 1
-rgb 4 7;9 7
-equal 0 7;18 7;20 7;21 7;22 7;23 7;24 7;26 7
-rgba 4 2;9 2
-english 17 1
-right 16 6;10 2;15 2;26 2;13 1;17 1;25 1
-end 17 1
-right-border 26 1
-enclosures 2 5;19 2
-right-padding 26 1
-empty 23 1;24 1
-rightborder 26 1
-emphasis 10 44;19 44;9 40;11 40;12 32
-rightpadding 26 1
-em 0 3;18 3;20 3;21 3;22 3;23 3;24 3;26 3;7 1
-rlh 20 1;21 1;23 1
-elements 27 17;20 10;21 10;22 10;26 10;19 8;1 7;23 7;24 7;17 6;5 5;6 5;25 2;16 1
-rule 21 1;22 1
-element 25 11;14 7;16 7;23 5;19 4;21 4;24 4;22 3;20 2;27 2;0 1;18 1;26 1
-scatter 13 1
-either 21 3;22 3;23 3;24 3;12 2;20 2;26 2
-scripts 17 3
-effects 0 5;19 2
-scroll 25 1
-effect 13 13;18 12;19 4
-scrollbar 21 1;22 1;23 1;24 1
-edge 16 5;17 1
-semantax 14 5
-east 9 6;10 6;19 6;11 5;17 1
-sentence 17 1
-each 14 2;13 1
-separating 13 1
-drop 13 5;19 2
-sequences 16 1
-doublecircle 11 2
-sesame 11 2
-double-circle 11 2
-set 19 15;2 5;3 5;4 5;6 5;7 5;21 2;22 2;20 1;23 1;24 1;26 1
-double 11 2;6 1
-sets 19 8;8 5;9 5;10 5;12 5
-dotted 6 1
-shadow 13 29;19 9
-dot 11 2
-short 23 1;24 1
-documents 14 1
-shrink 25 1
-distance 0 5;13 5;19 4
-shrinks 23 1;24 1
-display 20 1;21 1;22 1;23 1;24 1;26 1
-side 15 2
-directly 11 1
-silver 4 1;9 1
-direction 13 5;19 2
-single 8 5;12 5;19 4;11 1;16 1
-digit 4 2;9 2
-size 3 22;21 15;22 15;23 15;24 15;25 13;20 12;26 12;0 10;18 10;27 10;19 7;14 4
-diffuse 13 1
-sizing 27 39;20 9;26 9;21 6;22 6;23 6;24 6;25 6
-different 20 2;26 2;21 1;22 1;23 1;24 1
-small 14 1
-device 20 1;21 1;22 1;23 1;24 1;26 1
-small-size 14 1
-determined 7 1
-smaller 20 1;21 1;22 1;23 1;24 1;26 1
-determine 16 5;19 2
-smallsize 14 1
-descenders 15 6;19 2
-solid 6 1
-depending 20 1;26 1
-some 2 1;8 1;17 1
-defined 4 1;9 1
-somewhere 21 1;22 1
-define 13 1
-source 13 6;19 2
-decorative 5 17;6 17;4 12;7 12;19 12
-south 17 1
-decorations 4 1
-space 16 23;19 7;17 2;0 1;21 1;22 1;23 1;24 1
-decoration 19 43;8 38;4 22;5 22;6 22;7 22;15 7
-spaces 16 21;17 21;3 13;19 12;1 5
-declare 12 1
-spacing 0 34;18 27;19 18
-declaration 8 5;12 5;19 4
-spec 8 12;12 12;19 4
-dashed 6 1
-special 4 1;9 1
-dangling 16 1
-specified 13 6;19 2;8 1;10 1;11 1;21 1;22 1
-currentcolor 4 1;9 1
-specifies 11 5;19 2
-current 20 6;18 5;21 5;23 5;26 5;0 4;22 4;24 4
-specify 27 19;25 6;20 5;21 5;22 5;23 5;24 5;26 5;7 2;3 1;4 1;9 1;17 1
-culturally 2 12;19 2
-specifying 0 2
-css 19 44;27 20;4 8;9 8;0 6;1 6;2 6;3 6;5 6;6 6;7 6;8 6;10 6;11 6;12 6;13 6;14 6;15 6;16 6;17 6;18 6;20 6;21 6;22 6;23 6;24 6;25 6;26 6
-standard 4 2;9 2
-crosses 15 1
-stretches 17 1
-cross 15 6;19 2
-strike 5 1
-created 3 5;19 2
-strikethroughs 4 5;7 5;19 4
-create 0 5;19 2;13 1
-string 1 6;17 2;19 2
-count 0 1;18 1;22 1;24 1;26 1
-style 19 64;6 41;11 36;27 16;8 7;12 7;0 2;1 2;2 2;3 2;4 2;5 2;7 2;9 2;10 2;13 2;14 2;15 2;16 2;17 2;18 2;20 2;21 2;22 2;23 2;24 2;25 2;26 2
-corner 25 1
-subject 21 1;22 1;23 1;24 1
-controls 17 1
-such 7 1
-continued 17 1
-sum 20 1;26 1
-continue 17 1
-symbol 11 5;19 2
-contentbox 20 1;26 1
-syntax 2 2
-content-box 20 1;26 1
-tab 3 27;19 9
-content 20 3;26 3
-tab-size 3 22;19 7
-consecutive 16 1
-tabs 3 12;16 6;19 4
-compress 0 12;19 2
-tabsize 3 22;19 7
-completely 21 1;22 1
-tag 2 5;19 2
-compatible 25 1
-tags 2 1
-commas 13 1
-teal 4 1;9 1
-colors 4 1;9 1
-text 19 110;8 38;12 32;15 29;9 28;5 27;6 27;10 27;11 27;13 27;4 23;7 22;14 22;17 18;23 4;24 4;21 3;22 3;16 2
-color 4 42;9 42;19 24;12 5;13 2
-text-decoration 8 22;19 9;15 5
-collapsed 16 4
-text-decoration-color 4 22;19 7
-collapse 16 2
-text-decoration-line 5 22;19 9;8 5
-cm 0 1;18 1;20 1;21 1;22 1;23 1;24 1;26 1
-text-decoration-style 6 22;19 9;8 5
-circle 11 4
-text-decoration-thickness 7 22;19 9;8 5
-choose 5 5;19 2;12 1
-text-emphasis 12 22;19 7
-chinese 10 2;2 1;17 1
-text-emphasis-color 9 22;19 9;12 5
-chemical 17 1
-text-emphasis-position 10 22;19 7
-characters 19 11;1 6;0 5;15 5;5 3;2 1
-text-emphasis-style 11 22;19 9;12 5
-character 19 63;14 7;0 6;1 6;2 6;3 6;4 6;5 6;6 6;7 6;8 6;9 6;10 6;11 6;12 6;13 6;15 6;16 6;17 6;18 6
-text-shadow 13 22;19 7
-change 25 12;27 10;21 5;22 5;23 5;24 5;14 4
-text-transform 14 22;19 7
-ch 0 1;18 1;22 1;24 1;26 1
-text-underline-position 15 22;19 7
-centimeter 0 1;18 1;20 1;21 1;22 1;23 1;24 1;26 1
-textdecoration 8 22;19 9;15 5
-causing 21 2;22 2
-textdecorationcolor 4 22;19 7
-cause 23 2;24 2
-textdecorationline 5 22;19 9;8 5
-casts 13 5;19 2
-textdecorationstyle 6 22;19 9;8 5
-casting 13 1
-textdecorationthickness 7 22;19 9;8 5
-case 23 2;24 2
-textemphasis 12 22;19 7
-captialized 14 1
-textemphasiscolor 9 22;19 9;12 5
-capped 21 1;22 1
-textemphasisposition 10 22;19 7
-capitalize 14 1
-textemphasisstyle 11 22;19 9;12 5
-capital 20 1;21 1;23 1
-textshadow 13 22;19 7
-capabilities 20 1;21 1;22 1;23 1;24 1;26 1
-texttransform 14 22;19 7
-cap 20 2;21 2;23 2
-textunderlineposition 15 22;19 7
-can 25 17;27 4;0 1
-thai 17 1
-browser 25 1
-thickness 7 41;19 13;8 5;20 1;26 1
-breakword 1 1;17 1
-things 17 1
-breakspaces 16 2
-titling 0 5;19 2
-breakall 17 1
-top 20 2
-break-word 1 1;17 1
-top-border 20 1
-break-spaces 16 2
-top-padding 20 1
-break-all 17 1
-topborder 20 1
-break 17 41;19 11;1 7;16 2
-toppadding 20 1
-boxsizing 20 3;26 3
-traditional 2 1
-box-sizing 20 3;26 3
-transform 14 22;19 7
-box 20 5;26 5;14 1;25 1
-transparency 4 1;9 1
-boundary 16 1
-transparent 4 1;9 1
-boundaries 1 5;17 5;19 4
-treated 16 1
-bottompadding 20 1
-treatment 19 17
-bottomborder 20 1
-triangle 11 2
-bottom-padding 20 1
-tune 0 5;19 2
-bottom-border 20 1
-two 0 1;5 1;13 1;20 1;26 1
-bottom 20 2
-type 5 5;19 2
-both 12 6;19 2;25 2;10 1
-typographic 19 19;13 12;0 1;2 1;3 1;18 1;20 1;21 1;22 1;23 1;24 1;26 1
-borderbox 20 1;26 1
-under 10 1;15 1
-border-box 20 1;26 1
-underline 15 30;19 9;5 1
-border 20 3;26 3
-underlines 15 18;19 8;4 5;7 5
-blurradius 13 3
-units 20 5;21 5;22 5;23 5;24 5;26 5;0 2;18 2;7 1
-blur-radius 13 3
-up 21 1;22 1
-blur 13 3
-upon 20 1;26 1
-bluephrase 0 5;1 5;2 5;3 5;4 5;5 5;6 5;7 5;8 5;9 5;10 5;11 5;12 5;13 5;14 5;15 5;16 5;17 5;18 5;19 5;20 5;21 5;22 5;23 5;24 5;25 5;26 5;27 5
-uppercase 14 20;19 4
-blue 4 4;9 4;0 1;1 1;2 1;3 1;5 1;6 1;7 1;8 1;10 1;11 1;12 1;13 1;14 1;15 1;16 1;17 1;18 1;19 1;20 1;21 1;22 1;23 1;24 1;25 1;26 1;27 1
-urls 17 1
-block 20 3;21 3;22 3;23 3;24 3;26 3
-usage 10 2
-black 4 1;9 1
-use 15 6;19 6;3 5;11 5;20 3;21 3;22 3;23 3;24 3;26 3;0 2;17 2;18 2;1 1;2 1;5 1;6 1;7 1
-between 0 6;18 5;19 4;25 2;17 1;21 1;22 1
-user 25 18;27 4
-beneath 5 1
-using 13 5;19 2;2 1;4 1;7 1;9 1;11 1
-below 15 6;19 2;10 1;13 1;23 1;24 1
-value 21 3;22 3;25 3;0 2;4 2;9 2;20 2;26 2;7 1;23 1;24 1
-baseline 15 5;19 2
-values 27 10;13 9;8 4;12 4;15 4;16 4;17 4;0 3;1 3;2 3;3 3;4 3;5 3;6 3;7 3;9 3;10 3;11 3;14 3;18 3;20 3;21 3;22 3;23 3;24 3;25 3;26 3
-based 14 1
-variant 14 2
-axis 20 6;21 6;22 6;23 6;24 6;26 6
-vb 20 1;21 1;22 1;23 1;24 1;26 1
-aware 2 12;19 2
-versus 3 12;19 2
-automatically 27 8;21 5;22 5;23 5;24 5;16 1
-vertical 10 2;15 2;21 1;23 1;25 1
-auto 15 1;25 1
-vertically 10 1;25 1
-attribute 14 5
-vh 20 3;21 3;22 3;23 3;24 3;26 3
-asian 9 6;10 6;19 6;11 5;17 2
-vi 20 1;21 1;22 1;23 1;24 1;26 1
-area 20 2;26 2
-viewport 20 7;21 7;22 7;23 7;24 7;26 7
-aqua 4 1;9 1
-viewport-percentage 20 1;21 1;22 1;23 1;24 1;26 1
-apply 5 5;19 2
-viewportpercentage 20 1;21 1;22 1;23 1;24 1;26 1
-appear 21 1;22 1;23 1;24 1
-viewports 20 4;21 4;22 4;23 4;24 4;26 4
-apostrophes 2 1
-visible 25 1
-anywhere 1 1
-visual 25 2
-amount 0 1;21 1;22 1
-vmax 20 1;21 1;22 1;23 1;24 1;26 1
-always 11 1
-vmin 20 1;21 1;22 1;23 1;24 1;26 1
-alternatively 7 1
-vw 20 3;21 3;22 3;23 3;24 3;26 3
-also 23 1;24 1
-want 16 12;19 2
-allows 25 1
-wavy 4 5;7 5;19 4;6 1
-allow 25 3
-when 16 14;17 14;19 4;1 3;21 2;22 2;23 2;24 2;25 1
-allinone 8 12;12 12;19 4
-whether 25 5;27 2;17 1
-all-in-one 8 12;12 12;19 4
-which 5 5;11 5;19 4;23 3;24 3;20 2;21 2;22 2;26 2;0 1;15 1;18 1;25 1
-all 8 18;12 12;19 6;17 2
-whichever 20 2;21 2;22 2;23 2;24 2;26 2
-affordance 25 2
-white 16 22;19 7;4 1;9 1
-advance 18 3;0 2;1 2;22 2;24 2;26 2
-white-space 16 22;19 7
-adjust 15 1
-whitespace 16 26;18 12;19 11;3 5
-adjacent 0 1
-wider 13 1
-adds 25 1
-width 22 56;27 50;24 48;26 47;3 5;18 3;0 2;1 2;16 2;19 2;20 2;21 2;23 2;25 2;14 1
-additional 18 5;19 2
-will 23 3;24 3;21 2;22 2
-add 16 9;18 5;19 2
-with 19 11;2 6;6 5;9 5;14 4;7 1;13 1;25 1
-actual 21 1;22 1
-within 16 5;1 2;19 2;21 1;22 1
-across 13 5;19 2
-without 1 5;19 2;17 1
-account 20 1;21 1;22 1;23 1;24 1;26 1
-word 17 24;18 22;19 16;1 3;16 2;0 1;14 1
-abruptly 17 1
-word-break 17 23;19 7
-above 5 1;10 1;13 1
-word-spacing 18 22;19 7
-96px 0 4;18 4;20 4;21 4;22 4;23 4;24 4;26 4
-word-wrap 19 2
-94px 0 1;18 1;20 1;21 1;22 1;23 1;24 1;26 1
-wordbreak 17 23;19 7
-8px 0 2;18 2;20 2;21 2;22 2;23 2;24 2;26 2
-words 18 17;19 6;0 5;14 1;17 1
-6digit 4 1;9 1
-wordspacing 18 22;19 7
-6-digit 4 1;9 1
-wordwrap 19 2
-3digit 4 1;9 1
-wrap 1 22;19 7;16 2
-33px 0 1;18 1;20 1;21 1;22 1;23 1;24 1;26 1
-writing 15 2
-3-digit 4 1;9 1
-written 10 1
-1in 0 2;18 2;20 2;21 2;22 2;23 2;24 2;26 2
-x11 4 1;9 1
-16px 0 1;18 1;20 1;21 1;22 1;23 1;24 1;26 1
-yellow 4 1;9 1
-12pt 0 1;18 1;20 1;21 1;22 1;23 1;24 1;26 1
-yes 16 4;17 4
-00f 4 1;9 1
-水 0 1;18 1;22 1;24 1;26 1
-- 0 5;1 5;2 5;3 5;4 5;5 5;6 5;7 5;8 5;9 5;10 5;11 5;12 5;13 5;14 5;15 5;16 5;17 5;18 5;19 5;20 5;21 5;22 5;23 5;24 5;25 5;26 5;27 5
+lowhigh|2 1
+lowercase|14 20;19 4
+made|25 1
+lower|25 1
+make|15 12;19 2;14 1
+low-high|2 1
+manuscript|16 1
+low|2 1
+mark|9 12;10 12;11 12;19 8;2 5
+long|1 6;19 2;17 1;21 1;22 1
+marked|2 1
+location|10 2
+marks|10 10;9 6;11 6;19 6;2 4
+listed|4 1;9 1
+maroon|4 1;9 1
+list|11 1
+max|21 26;22 26;27 14;25 2
+linethrough|5 1
+max-height|21 26;27 7;25 1
+lines|19 6;4 5;6 5;7 5
+max-width|22 26;27 7;25 1
+lineheight|20 2;21 2;23 2
+maxheight|21 26;27 7;25 1
+line-through|5 1
+maximum|21 19;22 19;27 13;20 1;23 1;24 1;26 1
+line-height|20 2;21 2;23 2
+maxwidth|22 26;27 7;25 1
+line|5 43;19 19;4 12;6 12;7 12;16 11;8 5;20 4;21 4;23 4;17 3;1 2;15 1
+meaningful|25 1
+limited|17 1
+meanings|16 1
+lime|4 1;9 1
+measure|18 3;0 2;22 2;24 2;26 2
+like|17 1
+middle|17 2
+lighting|13 12;19 2
+millimeter|0 2;18 2;20 2;21 2;22 2;23 2;24 2;26 2
+light|13 7;19 2
+min|23 22;24 22;27 14;25 2
+lh|20 1;21 1;23 1
+min-height|23 22;27 7;25 1
+letterspacing|0 22;19 7
+min-width|24 22;27 7;25 1
+letters|14 6;19 2;0 1;15 1;20 1;21 1;23 1
+minheight|23 22;27 7;25 1
+letter-spacing|0 22;19 7
+minimum|23 19;24 19;27 13;20 1;21 1;22 1;26 1
+letter|0 34;19 11;15 5;14 3
+minwidth|24 22;27 7;25 1
+less|21 1;22 1
+mm|0 1;18 1;20 1;21 1;22 1;23 1;24 1;26 1
+length|3 1
+modes|15 2
+leftpadding|26 1
+more|15 12;13 2;19 2;4 1;9 1;21 1;22 1
+leftborder|26 1
+must|25 1
+left-padding|26 1
+names|4 1;9 1
+left-border|26 1
+navy|4 1;9 1
+left|10 2;15 2;26 2;13 1;23 1;24 1
+necessary|17 2;1 1
+latin|17 1
+need|17 1
+larger|13 1;20 1;21 1;22 1;23 1;24 1;26 1
+needed|23 1;24 1
+languages|10 1
+needing|17 1
+lang|14 5
+negative|0 1;13 1
+korean|17 1
+new|16 8;1 2
+keywords|1 1;5 1;6 1;11 1;16 1;25 1
+newlines|16 11;19 2
+keyword|17 3;10 2;11 2;16 2;4 1;7 1;9 1;12 1;15 1
+next|1 2;16 2;17 1
+keystroke|3 5;19 2
+nominal|20 1;21 1;23 1
+keyboard|2 2
+none|5 1;25 1
+keepall|17 1
+normal|15 1;16 1;17 1;21 1;22 1
+keep-all|17 1
+nowrap|16 1
+keep|16 13;19 2;15 1;17 1
+number|3 1
+katakana|14 1
+occupy|14 1
+kanji|10 2;14 1
+offset|13 4
+kana|14 1
+offset-x|13 2
+japanese|10 2;14 2;17 1
+offset-y|13 2
+item|4 1;9 1
+offsetx|13 2
+interpretations|20 1;26 1
+offsety|13 2
+integer|3 1
+oh|3 12;19 2
+inline|20 3;21 3;22 3;23 3;24 3;26 3
+olive|4 1;9 1
+initial|20 17;26 17;27 13
+on|15 2;14 1;17 1
+individual|19 7;0 5;8 1
+one|8 12;12 12;19 4;1 1;4 1;5 1;6 1;9 1;13 1;15 1;17 1;25 1
+independent|0 1;18 1;20 1;21 1;22 1;23 1;24 1;26 1
+only|4 1;9 1;20 1;26 1
+increased|0 1
+opacity|4 1;9 1
+inch|0 2;18 2;20 2;21 2;22 2;23 2;24 2;26 2
+opaque|4 1;9 1
+improve|0 5;19 2
+open|11 5
+ideograph|0 2;18 2;22 2;24 2;26 2
+opposite|13 1
+ic|0 1;18 1;22 1;24 1;26 1
+optional|13 1
+htmls|2 5;19 2
+order|8 1;12 1
+hsla|4 5;9 5
+over|15 6;19 2;10 1
+hsl|4 4;9 4
+overflow|1 39;19 9;16 7;17 1;21 1;22 1;23 1;24 1;25 1
+how|16 6;19 2
+overflow-wrap|1 22;19 5
+horizontally|10 1;25 1
+overflow-x|22 1;24 1
+horizontal|10 2;22 1;24 1;25 1
+overflow-y|21 1;23 1
+honored|16 4
+overflowed|21 1;22 1
+honor|16 2
+overflowing|17 5;19 2;23 1;24 1
+hiragana|14 1
+overflowwrap|1 22;19 5
+high|2 1
+overflowx|22 1;24 1
+hidden|21 1;22 1;23 1;24 1;25 1
+overflowy|21 1;23 1
+hex|4 2;9 2
+overline|5 1
+height|21 61;23 53;20 52;27 50;22 2;24 2;25 2;26 2
+overlines|4 5;7 5;19 4
+hanzi|10 2
+padding|20 2;26 2
+handled|16 5;19 2
+pair|2 1;11 1
+guillemet|2 1
+pairs|11 2
+grow|25 1
+parent|20 1;21 1;22 1;23 1;24 1;26 1
+group|13 1
+pc|0 1;18 1;20 1;21 1;22 1;23 1;24 1;26 1
+green|4 3;9 3
+percent|20 1;21 1;22 1;23 1;24 1;26 1
+gray|4 1;9 1
+percentage|18 2;20 2;21 2;22 2;23 2;24 2;26 2
+glyphs|2 5;19 2
+phrase|0 1;1 1;2 1;3 1;4 1;5 1;6 1;7 1;8 1;9 1;10 1;11 1;12 1;13 1;14 1;15 1;16 1;17 1;18 1;19 1;20 1;21 1;22 1;23 1;24 1;25 1;26 1;27 1
+glyph|11 2;0 1;18 1;20 1;21 1;22 1;23 1;24 1;26 1
+pica|0 1;18 1;20 1;21 1;22 1;23 1;24 1;26 1
+fully|1 2;4 2;9 2
+pixels|0 1;18 1;20 1;21 1;22 1;23 1;24 1;26 1
+fullwidth|14 1
+place|10 4;5 2
+fullsizekana|14 1
+plus|20 2;26 2
+fullsize|14 1
+point|0 1;18 1;20 1;21 1;22 1;23 1;24 1;26 1
+full-width|14 1
+position|10 40;15 24;19 18
+full-size-kana|14 1
+positive|0 1;13 1
+full-size|14 1
+possible|16 1
+full|14 4;23 2;24 2
+pre|16 4
+fuchsia|4 1;9 1
+pre-line|16 1
+fromfont|7 1
+pre-wrap|16 2
+from-font|7 1
+preline|16 1
+fourth|4 1;9 1
+present|17 12;19 2
+four|13 2
+prevent|1 12;17 5;19 4
+formulas|4 2;9 2;17 1
+prewrap|16 2
+formula|4 2;9 2
+produce|16 1
+form|14 1
+properties|19 9;12 6;8 5
+forces|15 2
+property|19 16;12 9;13 9;3 8;8 8;9 8;10 8;11 8;15 8;17 5;25 5;20 4;21 4;22 4;23 4;24 4;26 4;0 3;1 3;2 3;4 3;5 3;6 3;7 3;14 3;16 3;18 3
+force|17 12;14 6;19 6;15 5
+provide|2 1
+fontsize|0 2;18 2;20 2;21 2;22 2;23 2;24 2;26 2
+providing|11 1
+fonts|18 3;0 2;20 2;21 2;22 2;23 2;24 2;26 2;15 1
+pt|0 1;18 1;20 1;21 1;22 1;23 1;24 1;26 1
+fontrelative|0 1;18 1;20 1;21 1;22 1;23 1;24 1;26 1
+purple|4 1;9 1
+font-size|0 2;18 2;20 2;21 2;22 2;23 2;24 2;26 2
+px|0 1;7 1;18 1;20 1;21 1;22 1;23 1;24 1;26 1
+font-relative|0 1;18 1;20 1;21 1;22 1;23 1;24 1;26 1
+quarter|0 1;18 1;20 1;21 1;22 1;23 1;24 1;26 1
+font|20 6;21 6;23 6;0 5;18 5;22 5;24 5;26 5;7 2
+quotation|2 6;19 2
+flowing|17 1
+quotation-mark|2 5;19 2
+fixed|0 1;18 1;20 1;21 1;22 1;23 1;24 1;26 1
+quotationmark|2 5;19 2
+fit|1 2;16 2;21 2;22 2
+quotations|2 13;19 2
+first|4 1;9 1;13 1;14 1
+quotes|2 28;19 7
+fine|0 5;19 2
+radius|13 3
+filled|11 5
+readability|0 5;19 2
+fill|23 1;24 1
+readable|15 12;19 2
+file|7 1
+really|16 12;19 2
+f00|4 1;9 1
+red|4 3;9 3
+extra|21 1;22 1;23 1;24 1
+reduced|0 1
+expects|13 1
+relative|20 3;21 3;23 3;0 2;18 2;22 2;24 2;26 2
+expanded|21 3;22 3
+rem|0 1;18 1;20 1;21 1;22 1;23 1;24 1;26 1
+expandable|27 5
+remove|25 1
+expand|0 12;19 2;21 1;22 1
+required|13 1;21 1;22 1
+examples|2 4;0 3;1 3;3 3;4 3;5 3;6 3;7 3;8 3;9 3;10 3;11 3;12 3;13 3;14 3;15 3;16 3;17 3;18 3;20 3;21 3;22 3;23 3;24 3;25 3;26 3
+resizable|25 1
+example|2 2;11 2
+resize|25 22;27 7
+ex|20 1;21 1;23 1
+resized|25 8;27 2;23 1;24 1
+everything|21 1;22 1
+resizing|25 1
+every|14 2
+rgb|4 7;9 7
+equivalent|14 2;3 1
+rgba|4 2;9 2
+equal|0 7;18 7;20 7;21 7;22 7;23 7;24 7;26 7
+right|16 6;10 2;15 2;26 2;13 1;17 1;25 1
+english|17 1
+right-border|26 1
+end|17 1
+right-padding|26 1
+enclosures|2 5;19 2
+rightborder|26 1
+empty|23 1;24 1
+rightpadding|26 1
+emphasis|10 44;19 44;9 40;11 40;12 32
+rlh|20 1;21 1;23 1
+em|0 3;18 3;20 3;21 3;22 3;23 3;24 3;26 3;7 1
+rule|21 1;22 1
+elements|27 17;20 10;21 10;22 10;26 10;19 8;1 7;23 7;24 7;17 6;5 5;6 5;25 2;16 1
+scatter|13 1
+element|25 11;14 7;16 7;23 5;19 4;21 4;24 4;22 3;20 2;27 2;0 1;18 1;26 1
+scripts|17 3
+either|21 3;22 3;23 3;24 3;12 2;20 2;26 2
+scroll|25 1
+effects|0 5;19 2
+scrollbar|21 1;22 1;23 1;24 1
+effect|13 13;18 12;19 4
+semantax|14 5
+edge|16 5;17 1
+sentence|17 1
+east|9 6;10 6;19 6;11 5;17 1
+separating|13 1
+each|14 2;13 1
+sequences|16 1
+drop|13 5;19 2
+sesame|11 2
+doublecircle|11 2
+set|19 15;2 5;3 5;4 5;6 5;7 5;21 2;22 2;20 1;23 1;24 1;26 1
+double-circle|11 2
+sets|19 8;8 5;9 5;10 5;12 5
+double|11 2;6 1
+shadow|13 29;19 9
+dotted|6 1
+short|23 1;24 1
+dot|11 2
+shrink|25 1
+documents|14 1
+shrinks|23 1;24 1
+distance|0 5;13 5;19 4
+side|15 2
+display|20 1;21 1;22 1;23 1;24 1;26 1
+silver|4 1;9 1
+directly|11 1
+single|8 5;12 5;19 4;11 1;16 1
+direction|13 5;19 2
+size|3 22;21 15;22 15;23 15;24 15;25 13;20 12;26 12;0 10;18 10;27 10;19 7;14 4
+digit|4 2;9 2
+sizing|27 39;20 9;26 9;21 6;22 6;23 6;24 6;25 6
+diffuse|13 1
+small|14 1
+different|20 2;26 2;21 1;22 1;23 1;24 1
+small-size|14 1
+device|20 1;21 1;22 1;23 1;24 1;26 1
+smaller|20 1;21 1;22 1;23 1;24 1;26 1
+determined|7 1
+smallsize|14 1
+determine|16 5;19 2
+solid|6 1
+descenders|15 6;19 2
+some|2 1;8 1;17 1
+depending|20 1;26 1
+somewhere|21 1;22 1
+defined|4 1;9 1
+source|13 6;19 2
+define|13 1
+south|17 1
+decorative|5 17;6 17;4 12;7 12;19 12
+space|16 23;19 7;17 2;0 1;21 1;22 1;23 1;24 1
+decorations|4 1
+spaces|16 21;17 21;3 13;19 12;1 5
+decoration|19 43;8 38;4 22;5 22;6 22;7 22;15 7
+spacing|0 34;18 27;19 18
+declare|12 1
+spec|8 12;12 12;19 4
+declaration|8 5;12 5;19 4
+special|4 1;9 1
+dashed|6 1
+specified|13 6;19 2;8 1;10 1;11 1;21 1;22 1
+dangling|16 1
+specifies|11 5;19 2
+currentcolor|4 1;9 1
+specify|27 19;25 6;20 5;21 5;22 5;23 5;24 5;26 5;7 2;3 1;4 1;9 1;17 1
+current|20 6;18 5;21 5;23 5;26 5;0 4;22 4;24 4
+specifying|0 2
+culturally|2 12;19 2
+standard|4 2;9 2
+css|19 44;27 20;4 8;9 8;0 6;1 6;2 6;3 6;5 6;6 6;7 6;8 6;10 6;11 6;12 6;13 6;14 6;15 6;16 6;17 6;18 6;20 6;21 6;22 6;23 6;24 6;25 6;26 6
+stretches|17 1
+crosses|15 1
+strike|5 1
+cross|15 6;19 2
+strikethroughs|4 5;7 5;19 4
+created|3 5;19 2
+string|1 6;17 2;19 2
+create|0 5;19 2;13 1
+style|19 62;6 41;11 36;27 16;8 7;12 7;0 2;1 2;2 2;3 2;4 2;5 2;7 2;9 2;10 2;13 2;14 2;15 2;16 2;17 2;18 2;20 2;21 2;22 2;23 2;24 2;25 2;26 2
+count|0 1;18 1;22 1;24 1;26 1
+subject|21 1;22 1;23 1;24 1
+corner|25 1
+such|7 1
+controls|17 1
+sum|20 1;26 1
+continued|17 1
+symbol|11 5;19 2
+continue|17 1
+syntax|2 2
+contentbox|20 1;26 1
+tab|3 27;19 9
+content-box|20 1;26 1
+tab-size|3 22;19 7
+content|20 3;26 3
+tabs|3 12;16 6;19 4
+consecutive|16 1
+tabsize|3 22;19 7
+compress|0 12;19 2
+tag|2 5;19 2
+completely|21 1;22 1
+tags|2 1
+compatible|25 1
+teal|4 1;9 1
+commas|13 1
+text|19 110;8 38;12 32;15 29;9 28;5 27;6 27;10 27;11 27;13 27;4 23;7 22;14 22;17 18;23 4;24 4;21 3;22 3;16 2
+colors|4 1;9 1
+text-decoration|8 22;19 9;15 5
+color|4 42;9 42;19 24;12 5;13 2
+text-decoration-color|4 22;19 7
+collapsed|16 4
+text-decoration-line|5 22;19 9;8 5
+collapse|16 2
+text-decoration-style|6 22;19 9;8 5
+cm|0 1;18 1;20 1;21 1;22 1;23 1;24 1;26 1
+text-decoration-thickness|7 22;19 9;8 5
+circle|11 4
+text-emphasis|12 22;19 7
+choose|5 5;19 2;12 1
+text-emphasis-color|9 22;19 9;12 5
+chinese|10 2;2 1;17 1
+text-emphasis-position|10 22;19 7
+chemical|17 1
+text-emphasis-style|11 22;19 9;12 5
+characters|19 11;1 6;0 5;15 5;5 3;2 1
+text-shadow|13 22;19 7
+character|19 63;14 7;0 6;1 6;2 6;3 6;4 6;5 6;6 6;7 6;8 6;9 6;10 6;11 6;12 6;13 6;15 6;16 6;17 6;18 6
+text-transform|14 22;19 7
+change|25 12;27 10;21 5;22 5;23 5;24 5;14 4
+text-underline-position|15 22;19 7
+ch|0 1;18 1;22 1;24 1;26 1
+textdecoration|8 22;19 9;15 5
+centimeter|0 1;18 1;20 1;21 1;22 1;23 1;24 1;26 1
+textdecorationcolor|4 22;19 7
+causing|21 2;22 2
+textdecorationline|5 22;19 9;8 5
+cause|23 2;24 2
+textdecorationstyle|6 22;19 9;8 5
+casts|13 5;19 2
+textdecorationthickness|7 22;19 9;8 5
+casting|13 1
+textemphasis|12 22;19 7
+case|23 2;24 2
+textemphasiscolor|9 22;19 9;12 5
+captialized|14 1
+textemphasisposition|10 22;19 7
+capped|21 1;22 1
+textemphasisstyle|11 22;19 9;12 5
+capitalize|14 1
+textshadow|13 22;19 7
+capital|20 1;21 1;23 1
+texttransform|14 22;19 7
+capabilities|20 1;21 1;22 1;23 1;24 1;26 1
+textunderlineposition|15 22;19 7
+cap|20 2;21 2;23 2
+thai|17 1
+can|25 17;27 4;0 1
+thickness|7 41;19 13;8 5;20 1;26 1
+browser|25 1
+things|17 1
+breakword|1 1;17 1
+titling|0 5;19 2
+breakspaces|16 2
+top|20 2
+breakall|17 1
+top-border|20 1
+break-word|1 1;17 1
+top-padding|20 1
+break-spaces|16 2
+topborder|20 1
+break-all|17 1
+toppadding|20 1
+break|17 41;19 11;1 7;16 2
+traditional|2 1
+boxsizing|20 3;26 3
+transform|14 22;19 7
+box-sizing|20 3;26 3
+transparency|4 1;9 1
+box|20 5;26 5;14 1;25 1
+transparent|4 1;9 1
+boundary|16 1
+treated|16 1
+boundaries|1 5;17 5;19 4
+treatment|19 17
+bottompadding|20 1
+triangle|11 2
+bottomborder|20 1
+tune|0 5;19 2
+bottom-padding|20 1
+two|0 1;5 1;13 1;20 1;26 1
+bottom-border|20 1
+type|5 5;19 2
+bottom|20 2
+typographic|19 19;13 12;0 1;2 1;3 1;18 1;20 1;21 1;22 1;23 1;24 1;26 1
+both|12 6;19 2;25 2;10 1
+under|10 1;15 1
+borderbox|20 1;26 1
+underline|15 30;19 9;5 1
+border-box|20 1;26 1
+underlines|15 18;19 8;4 5;7 5
+border|20 3;26 3
+units|20 5;21 5;22 5;23 5;24 5;26 5;0 2;18 2;7 1
+blurradius|13 3
+up|21 1;22 1
+blur-radius|13 3
+upon|20 1;26 1
+blur|13 3
+uppercase|14 20;19 4
+blue|4 4;9 4;0 1;1 1;2 1;3 1;5 1;6 1;7 1;8 1;10 1;11 1;12 1;13 1;14 1;15 1;16 1;17 1;18 1;19 1;20 1;21 1;22 1;23 1;24 1;25 1;26 1;27 1
+urls|17 1
+block|20 3;21 3;22 3;23 3;24 3;26 3
+usage|10 2
+black|4 1;9 1
+use|15 6;19 6;3 5;11 5;20 3;21 3;22 3;23 3;24 3;26 3;0 2;17 2;18 2;1 1;2 1;5 1;6 1;7 1
+between|0 6;18 5;19 4;25 2;17 1;21 1;22 1
+user|25 18;27 4
+beneath|5 1
+using|13 5;19 2;2 1;4 1;7 1;9 1;11 1
+below|15 6;19 2;10 1;13 1;23 1;24 1
+value|21 3;22 3;25 3;0 2;4 2;9 2;20 2;26 2;7 1;23 1;24 1
+baseline|15 5;19 2
+values|27 10;13 9;8 4;12 4;15 4;16 4;17 4;0 3;1 3;2 3;3 3;4 3;5 3;6 3;7 3;9 3;10 3;11 3;14 3;18 3;20 3;21 3;22 3;23 3;24 3;25 3;26 3
+based|14 1
+variant|14 2
+axis|20 6;21 6;22 6;23 6;24 6;26 6
+vb|20 1;21 1;22 1;23 1;24 1;26 1
+aware|2 12;19 2
+versus|3 12;19 2
+automatically|27 8;21 5;22 5;23 5;24 5;16 1
+vertical|10 2;15 2;21 1;23 1;25 1
+auto|15 1;25 1
+vertically|10 1;25 1
+attribute|14 5
+vh|20 3;21 3;22 3;23 3;24 3;26 3
+asian|9 6;10 6;19 6;11 5;17 2
+vi|20 1;21 1;22 1;23 1;24 1;26 1
+area|20 2;26 2
+viewport|20 7;21 7;22 7;23 7;24 7;26 7
+aqua|4 1;9 1
+viewport-percentage|20 1;21 1;22 1;23 1;24 1;26 1
+apply|5 5;19 2
+viewportpercentage|20 1;21 1;22 1;23 1;24 1;26 1
+appear|21 1;22 1;23 1;24 1
+viewports|20 4;21 4;22 4;23 4;24 4;26 4
+apostrophes|2 1
+visible|25 1
+anywhere|1 1
+visual|25 2
+amount|0 1;21 1;22 1
+vmax|20 1;21 1;22 1;23 1;24 1;26 1
+always|11 1
+vmin|20 1;21 1;22 1;23 1;24 1;26 1
+alternatively|7 1
+vw|20 3;21 3;22 3;23 3;24 3;26 3
+allows|25 1
+want|16 12;19 2
+allow|25 3
+wavy|4 5;7 5;19 4;6 1
+allinone|8 12;12 12;19 4
+when|16 14;17 14;19 4;1 3;21 2;22 2;23 2;24 2;25 1
+all-in-one|8 12;12 12;19 4
+whether|25 5;27 2;17 1
+all|8 18;12 12;19 6;17 2
+which|5 5;11 5;19 4;23 3;24 3;20 2;21 2;22 2;26 2;0 1;15 1;18 1;25 1
+affordance|25 2
+whichever|20 2;21 2;22 2;23 2;24 2;26 2
+advance|18 3;0 2;1 2;22 2;24 2;26 2
+white|16 22;19 7;4 1;9 1
+adjust|15 1
+white-space|16 22;19 7
+adjacent|0 1
+whitespace|16 26;18 12;19 11;3 5
+adds|25 1
+wider|13 1
+additional|18 5;19 2
+width|22 56;27 50;24 48;26 47;3 5;18 3;0 2;1 2;16 2;19 2;20 2;21 2;23 2;25 2;14 1
+add|16 9;18 5;19 2
+will|23 3;24 3;21 2;22 2
+actual|21 1;22 1
+with|19 11;2 6;6 5;9 5;14 4;7 1;13 1;25 1
+across|13 5;19 2
+within|16 5;1 2;19 2;21 1;22 1
+account|20 1;21 1;22 1;23 1;24 1;26 1
+without|1 5;19 2;17 1
+abruptly|17 1
+word|17 24;18 22;19 16;1 3;16 2;0 1;14 1
+above|5 1;10 1;13 1
+word-break|17 23;19 7
+HTML|14 5;20 2;21 2;23 2;0 1;2 1;18 1;22 1;24 1;26 1
+word-spacing|18 22;19 7
+BLUEPHRASE|0 5;1 5;2 5;3 5;4 5;5 5;6 5;7 5;8 5;9 5;10 5;11 5;12 5;13 5;14 5;15 5;16 5;17 5;18 5;19 5;20 5;21 5;22 5;23 5;24 5;25 5;26 5;27 5
+word-wrap|19 2
+96px|0 4;18 4;20 4;21 4;22 4;23 4;24 4;26 4
+wordbreak|17 23;19 7
+94px|0 1;18 1;20 1;21 1;22 1;23 1;24 1;26 1
+words|18 17;19 6;0 5;14 1;17 1
+8px|0 2;18 2;20 2;21 2;22 2;23 2;24 2;26 2
+wordspacing|18 22;19 7
+6digit|4 1;9 1
+wordwrap|19 2
+6-digit|4 1;9 1
+wrap|1 22;19 7;16 2
+3digit|4 1;9 1
+writing|15 2
+33px|0 1;18 1;20 1;21 1;22 1;23 1;24 1;26 1
+written|10 1
+3-digit|4 1;9 1
+x11|4 1;9 1
+1in|0 2;18 2;20 2;21 2;22 2;23 2;24 2;26 2
+yellow|4 1;9 1
+16px|0 1;18 1;20 1;21 1;22 1;23 1;24 1;26 1
+yes|16 4;17 4
+12pt|0 1;18 1;20 1;21 1;22 1;23 1;24 1;26 1
+水|0 1;18 1;22 1;24 1;26 1
+00f|4 1;9 1

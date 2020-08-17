@@ -141,12 +141,12 @@ export default class TextInterface {
 						
 		if (line == '')												// line == 'letters 14 6;19 2;0 1;15 1;20 1;21 1;23 1'
 			return;
-		var space = line.indexOf(' ');								// space == 7				
-		if (space == -1)
+		var verticalBar = line.indexOf('|');						// verticalBar == 7				
+		if (verticalBar == -1)
 			return;
-		var word = line.substr(0, space);							// word == 'letters'
+		var word = line.substr(0, verticalBar);						// word == 'letters'
 		
-		var docsAndWeights = line.substr(space+1);					// docsAndWeights == '14 6;19 2;0 1;15 1;20 1;21 1;23 1'
+		var docsAndWeights = line.substr(verticalBar+1);			// docsAndWeights == '14 6;19 2;0 1;15 1;20 1;21 1;23 1'
 		var arr = docsAndWeights.split(';');						// arr.length == 7
 		
 		var weightRefs = new Array();

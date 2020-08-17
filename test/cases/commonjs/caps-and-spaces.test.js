@@ -59,7 +59,7 @@ for (let i=0; i < words.length; i++) {
 
 
 // @testing prefixMatchesWeighted
-var prefix = ' St ';   var maxWords= 6;			;; wordList == 'style 64;string 6;strikethroughs 5;standard 2;stretches 1;strike 1;'
+var prefix = ' St ';   var maxWords= 6;			;; wordList == 'style 62;string 6;strikethroughs 5;standard 2;stretches 1;strike 1;'
 var prefix = ' Str ';  var maxWords= 6;			;; wordList == 'string 6;strikethroughs 5;stretches 1;strike 1;'
 var prefix = ' Stri ';  var maxWords= 6;		;; wordList == 'string 6;strikethroughs 5;strike 1;'
 var prefix = ' Strik ';  var maxWords= 6;		;; wordList == 'strikethroughs 5;strike 1;'
